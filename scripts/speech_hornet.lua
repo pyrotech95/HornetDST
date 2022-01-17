@@ -504,7 +504,7 @@ return {
     ANNOUNCE_DESPAWN = "I can see the light!",
 	ANNOUNCE_BECOMEGHOST = "oOooOooo!!",
 	ANNOUNCE_GHOSTDRAIN = "My humanity is about to start slipping away...",
-	ANNOUNCE_PETRIFED_TREES = "Did I just hear trees screaming?",
+	ANNOUNCE_PETRIFED_TREES = "The trees are screaming out.",
 	ANNOUNCE_KLAUS_ENRAGE = "There's no way to beat it now!!",
 	ANNOUNCE_KLAUS_UNCHAINED = "Its chains came off!",
 	ANNOUNCE_KLAUS_CALLFORHELP = "It called for help!",
@@ -835,81 +835,81 @@ return {
 
         PLAYER =
         {
-            GENERIC = "Greetings, %s!",
-            ATTACKER = "%s looks shifty...",
-            MURDERER = "Murderer!",
-            REVIVER = "%s, friend of ghosts.",
-            GHOST = "%s could use a heart.",
-            FIRESTARTER = "Burning that wasn't very scientific, %s.",
+            GENERIC = "A fated meeting, %s.",
+            ATTACKER = "%s, would you slay another?",
+            MURDERER = "Another fate cut short at your hands, %s.",
+            REVIVER = "%s, you would allow me another chance?",
+            GHOST = "%s, only pity for your cursed kind.",
+            FIRESTARTER = "So you've decided on fire as your answer, %s.",
         },
         WILSON =
         {
             GENERIC = "Stars and atoms! Are you my doppelganger?",
-            ATTACKER = "Yeesh. Do I always look that creepy?",
-            MURDERER = "Your existence is an affront to the laws of science, %s!",
-            REVIVER = "%s has expertly put our theories into practice.",
-            GHOST = "Best concoct a revival device. Can't leave another man of science floating.",
-            FIRESTARTER = "Burning that wasn't very scientific, %s.",
+            ATTACKER = "%s, would you slay another?",
+            MURDERER = "Did you find your answer in this act, %s.",
+            REVIVER = "%s, you would allow me another chance?",
+            GHOST = "%s, only pity for your cursed kind.",
+            FIRESTARTER = "So you've decided on fire as your answer, scientist.",
         },
         WOLFGANG =
         {
-            GENERIC = "It's good to see you, %s!",
+            GENERIC = "...So strong...",
             ATTACKER = "Let's not start a fight with the strongman...",
             MURDERER = "Murderer! I can take you!",
-            REVIVER = "%s is just a big teddy bear.",
+            REVIVER = "%s, you would allow me another chance?",
             GHOST = "I told you you couldn't deadlift that boulder. The numbers were all wrong.",
-            FIRESTARTER = "You can't actually \"fight\" fire, %s!",
+            FIRESTARTER = "So you've decided on fire as your answer, %s.",
         },
         WAXWELL =
         {
             GENERIC = "Decent day to you, %s!",
             ATTACKER = "Seems you've gone from \"dapper\" to \"slapper\".",
             MURDERER = "I'll show you Logic and Reason... those're my fists!",
-            REVIVER = "%s is using his powers for good.",
+            REVIVER = "%s, you would allow me another chance?",
             GHOST = "Don't look at me like that, %s! I'm working on it!",
-            FIRESTARTER = "%s's just asking to get roasted.",
+            FIRESTARTER = "So you've decided on fire as your answer, %s.",
         },
         WX78 =
         {
             GENERIC = "Good day to you, %s!",
             ATTACKER = "I think we need to tweak your primary directive, %s...",
             MURDERER = "%s! You've violated the first law!",
-            REVIVER = "I guess %s got that empathy module up and running.",
+            REVIVER = "%s, you would allow me another chance?",
             GHOST = "I always thought %s could use a heart. Now I'm certain!",
-            FIRESTARTER = "You look like you're gonna melt, %s. What happened?",
+            FIRESTARTER = "So you've decided on fire as your answer, %s.",
         },
         WILLOW =
         {
             GENERIC = "Good day to you, %s!",
             ATTACKER = "%s is holding that lighter pretty tightly...",
             MURDERER = "Murderer! Arsonist!",
-            REVIVER = "%s, friend of ghosts.",
+            REVIVER = "%s, you would allow me another chance?",
             GHOST = "I bet you're just burning for a heart, %s.",
-            FIRESTARTER = "Again?",
+            FIRESTARTER = "Again the flames surround you.",
         },
         WENDY =
         {
             GENERIC = "Greetings, %s!",
             ATTACKER = "%s doesn't have any sharp objects, does she?",
             MURDERER = "Murderer!",
-            REVIVER = "%s treats ghosts like family.",
+            REVIVER = "%s, you would allow me another chance?",
             GHOST = "I'm seeing double! I'd better concoct a heart for %s.",
-            FIRESTARTER = "I know you set those flames, %s.",
+            FIRESTARTER = "So you've decided on fire as your answer, %s.",
         },
         WOODIE =
         {
             GENERIC = "Greetings, %s!",
             ATTACKER = "%s has been a bit of a sap lately...",
             MURDERER = "Murderer! Bring me an axe and let's get in the swing of things!",
-            REVIVER = "%s saved everyone's backbacon.",
+            REVIVER = "%s, you would allow me another chance?",
             GHOST = "Does \"universal\" coverage include the void, %s?",
-            BEAVER = "%s's gone on a wood chucking rampage!",
-            BEAVERGHOST = "Will you bea-very mad if I don't revive you, %s?",
-            MOOSE = "Gad-zooks, that's a moose!",
-            MOOSEGHOST = "That moose'nt be very comfortable.",
-            GOOSE = "Take a gander at that!",
-            GOOSEGHOST = "Be more careful, you silly goose!",
-            FIRESTARTER = "Don't burn yourself out, %s.",
+            BEAVER = "He has given in to the beast inside.",
+            BEAVERGHOST = "He fell as the beast he became, a shadow of his former self.",
+            MOOSE = "This beast has many faces.",
+            MOOSEGHOST = "He fell as the beast he became, a shadow of his former self.",
+            GOOSE = "Another face, %s.",
+            GOOSEGHOST = "He fell as the beast he became, a shadow of his former self.",
+            FIRESTARTER = "So you've decided on fire as your answer, %s.",
         },
         WICKERBOTTOM =
         {
@@ -918,7 +918,7 @@ return {
             MURDERER = "Here comes my peer review!",
             REVIVER = "I have deep respect for %s's practical theorems.",
             GHOST = "This doesn't seem very scientific, does it, %s?",
-            FIRESTARTER = "I'm sure you had a very clever reason for that fire.",
+            FIRESTARTER = "So you've decided on fire as your answer, %s.",
         },
         WES =
         {
@@ -927,7 +927,7 @@ return {
             MURDERER = "Mime this!",
             REVIVER = "%s thinks outside the invisible box.",
             GHOST = "How do you say \"I'll get a revival device\" in mime?",
-            FIRESTARTER = "Wait, don't tell me. You lit a fire.",
+            FIRESTARTER = "So you've decided on fire as your answer, %s.",
         },
         WEBBER =
         {
@@ -936,7 +936,7 @@ return {
             MURDERER = "Murderer! I'll squash you, %s!",
             REVIVER = "%s is playing well with others.",
             GHOST = "%s is really buggin' me for a heart.",
-            FIRESTARTER = "We need to have a group meeting about fire safety.",
+            FIRESTARTER = "So you've decided on fire as your answer, %s.",
         },
         WATHGRITHR =
         {
@@ -945,7 +945,7 @@ return {
             MURDERER = "%s's gone berserk!",
             REVIVER = "%s has full command of spirits.",
             GHOST = "Nice try. You're not escaping to Valhalla yet, %s.",
-            FIRESTARTER = "%s is really heating things up today.",
+            FIRESTARTER = "So you've decided on fire as your answer, %s.",
         },
         WINONA =
         {
@@ -954,7 +954,7 @@ return {
             MURDERER = "It ends here, %s!",
             REVIVER = "You're pretty handy to have around, %s.",
             GHOST = "Looks like someone threw a wrench into your plans.",
-            FIRESTARTER = "Things are burning up at the factory.",
+            FIRESTARTER = "So you've decided on fire as your answer, %s.",
         },
         WORTOX =
         {
@@ -963,7 +963,7 @@ return {
             MURDERER = "Time to grab the imp by the horns!",
             REVIVER = "Thanks for lending a helping claw, %s.",
             GHOST = "I reject the reality of ghosts and imps.",
-            FIRESTARTER = "%s is becoming a survival liability.",
+            FIRESTARTER = "So you've decided on fire as your answer, %s.",
         },
         WORMWOOD =
         {
@@ -972,7 +972,7 @@ return {
             MURDERER = "Prepare to get weed whacked, %s!",
             REVIVER = "%s never gives up on his friends.",
             GHOST = "You need some help, lil guy?",
-            FIRESTARTER = "I thought you hated fire, %s.",
+            FIRESTARTER = "So you've decided on fire as your answer, %s.",
         },
         WARLY =
         {
@@ -981,7 +981,7 @@ return {
             MURDERER = "I hope you don't have any half-baked plans to murder me!",
             REVIVER = "Always rely on %s to cook up a plan.",
             GHOST = "Maybe he was cooking with ghost peppers.",
-            FIRESTARTER = "He's gonna flambé the place right down!",
+            FIRESTARTER = "So you've decided on fire as your answer, %s.",
         },
 
         WURT =
@@ -991,7 +991,7 @@ return {
             MURDERER = "You're just another murderous merm!",
             REVIVER = "Why thank you, %s!",
             GHOST = "%s is looking greener around the gills than usual.",
-            FIRESTARTER = "Didn't anyone teach you not to play with fire?!",
+            FIRESTARTER = "So you've decided on fire as your answer, %s.",
         },
 
         WALTER =
@@ -1001,7 +1001,7 @@ return {
             MURDERER = "Did you run out of material for your stories, %s?",
             REVIVER = "I can always count on %s.",
             GHOST = "I know you're having fun, but we'd best find a heart.",
-            FIRESTARTER = "That doesn't look like a campfire, %s.",
+            FIRESTARTER = "So you've decided on fire as your answer, %s.",
         },
 
         WANDA =
@@ -1011,7 +1011,7 @@ return {
             MURDERER = "Murderer! You won't get any second chances from me!",
             REVIVER = "If it wasn't for %s, I'd be history!",
             GHOST = "I'd better hurry up and find a heart.",
-            FIRESTARTER = "Let me guess, this has something to do with \"preserving the timeline\"?",
+            FIRESTARTER = "So you've decided on fire as your answer, %s.",
         },
 
         MIGRATION_PORTAL =
@@ -1022,40 +1022,40 @@ return {
         },
         GLOMMER =
         {
-            GENERIC = "It's cute, in a gross kind of way.",
-            SLEEPING = "Snug as a bug.",
+            GENERIC = "A strange beast of a foreign land.",
+            SLEEPING = "The beast rests.",
         },
         GLOMMERFLOWER =
         {
             GENERIC = "The petals shimmer in the light.",
-            DEAD = "The petals droop and shimmer in the light.",
+            DEAD = "Fate has not been kind to this.",
         },
         GLOMMERWINGS = "These would look empirically amazing on a helmet!",
-        GLOMMERFUEL = "This goop smells foul.",
+        GLOMMERFUEL = "Foul, but healing.",
         BELL = "Dingalingaling.",
         STATUEGLOMMER =
         {
-            GENERIC = "I'm not sure what that's supposed to be.",
-            EMPTY = "I broke it. For science.",
+            GENERIC = "A statue, perhaps of a beast long past?",
+            EMPTY = "A statue, desicrated now.",
         },
 
         LAVA_POND_ROCK = "As gneiss a place as any.",
 
-		WEBBERSKULL = "Poor little guy. He deserves a proper funeral.",
+		WEBBERSKULL = "He was not strong enough for this world.",
 		WORMLIGHT = "Looks delicious.",
 		WORMLIGHT_LESSER = "Kinda wrinkled.",
 		WORM =
 		{
 		    PLANT = "Seems safe to me.",
 		    DIRT = "Just looks like a pile of dirt.",
-		    WORM = "It's a worm!",
+		    WORM = "A worm.",
 		},
         WORMLIGHT_PLANT = "Seems safe to me.",
 		MOLE =
 		{
-			HELD = "Nowhere left to dig, my friend.",
-			UNDERGROUND = "Something's under there, searching for minerals.",
-			ABOVEGROUND = "I'd sure like to whack that mole... thing.",
+			HELD = "Small creature, I hold your fate in my hands.",
+			UNDERGROUND = "Perhaps a creature?",
+			ABOVEGROUND = "A small beast, scavenging to live.",
 		},
 		MOLEHILL = "What a nice, homey hole in the ground!",
 		MOLEHAT = "A wretched stench, but excellent visibility.",
@@ -1142,7 +1142,7 @@ return {
 		SLURPER = "It's so hairy!",
 		SLURPER_PELT = "Doesn't look all that much different dead.",
 		ARMORSLURPER = "A soggy, sustaining, succulent suit.",
-		ORANGEAMULET = "Teleportation can be so useful.",
+		ORANGEAMULET = "Takes care of menial tasks.",
 		YELLOWSTAFF = "A genius invention... a gem on a stick.",
 		YELLOWGEM = "This gem is yellow.",
 		ORANGEGEM = "It's an orange gem.",
@@ -1188,7 +1188,7 @@ return {
 			SW = "Southwest.",
 		},
 
-        HOUNDSTOOTH = "It's sharp!",
+        HOUNDSTOOTH = "Sharp as a needle.",
         ARMORSNURTLESHELL = "It sticks to your back when you wear it.",
         BAT = "Ack! That's terrifying!",
         BATBAT = "I bet I could fly if I held two of them.",
@@ -1199,8 +1199,8 @@ return {
         BUNNYMAN = "I am filled with an irresistible urge to do science.",
         FLOWER_CAVE = "Science makes it glow.",
         GUANO = "Another flavor of poop.",
-        LANTERN = "A more civilized light.",
-        LIGHTBULB = "It's strangely tasty looking.",
+        LANTERN = "A portable lampost.",
+        LIGHTBULB = "A light on the path.",
         MANRABBIT_TAIL = "I feel a lil better when I hold one.",
         MUSHROOMHAT = "Makes the wearer look like a fun guy.",
         MUSHROOM_LIGHT2 =
@@ -1390,8 +1390,8 @@ return {
 			GENERIC = "It's too sticky to walk on.",
 			GROWING = "Was that there before?",
 		},
-        BEEQUEENHIVEGROWN = "How in science did it get so big?!",
-        BEEGUARD = "It's guarding the queen.",
+        BEEQUEENHIVEGROWN = "A queen resides within.",
+        BEEGUARD = "The queen's guard.",
         HIVEHAT = "The world seems less a little crazy when I wear it.",
         MINISIGN =
         {
@@ -1471,13 +1471,13 @@ return {
 		BIGFOOT = "That is one biiig foot.",--removed
 		BIRDCAGE =
 		{
-			GENERIC = "Now it just needs a bird.",
-			OCCUPIED = "Who's a good bird?",
-			SLEEPING = "Awwww, he's asleep.",
-			HUNGRY = "He's looking a bit peckish.",
-			STARVING = "Has no one fed you in awhile?",
-			DEAD = "Maybe he's just resting?",
-			SKELETON = "That bird is definitely deceased.",
+			GENERIC = "Once inside, will there be any escape?",
+			OCCUPIED = "Captured, it's fate dictated by it's captor.",
+			SLEEPING = "It rests, and perhaps dreams of freedom?",
+			HUNGRY = "Food may prolong it's suffering, but should it?",
+			STARVING = "Without food it's fate is set.",
+			DEAD = "It's fate was sealed.",
+			SKELETON = "A life long past.",
 		},
 		BIRDTRAP = "Gives me a net advantage!",
 		CAVE_BANANA_BURNT = "Not my fault!",
@@ -1670,12 +1670,12 @@ return {
 		},
         DEER_ANTLER = "Was that supposed to come off?",
         DEER_GEMMED = "It's being controlled by that beast!",
-		DEERCLOPS = "It's enormous!!",
-		DEERCLOPS_EYEBALL = "This is really gross.",
-		EYEBRELLAHAT =	"It watches over the wearer.",
+		DEERCLOPS = "Am I ready to face it? Can I ever know?",
+		DEERCLOPS_EYEBALL = "My prize, what remains of my foe.",
+		EYEBRELLAHAT =	"Once my foe, now it looks over me.",
 		DEPLETED_GRASS =
 		{
-			GENERIC = "It's probably a tuft of grass.",
+			GENERIC = "Consumed, not yet ready to be used again.",
 		},
         GOGGLESHAT = "What a stylish pair of goggles.",
         DESERTHAT = "Quality eye protection.",
