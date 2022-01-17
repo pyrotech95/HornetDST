@@ -5,9 +5,9 @@ local assets = {
 }
 
 -- Your character's stats
-TUNING.ESCTEMPLATE_HEALTH = 150
-TUNING.ESCTEMPLATE_HUNGER = 150
-TUNING.ESCTEMPLATE_SANITY = 200
+TUNING.HORNET_HEALTH = 100
+TUNING.HORNET_HUNGER = 150
+TUNING.HORNET_SANITY = 150
 
 -- Custom starting inventory
 TUNING.GAMEMODE_STARTING_ITEMS.DEFAULT.ESCTEMPLATE = {
@@ -26,12 +26,12 @@ local prefabs = FlattenTree(start_inv, true)
 -- When the character is revived from human
 local function onbecamehuman(inst)
 	-- Set speed when not a ghost (optional)
-	inst.components.locomotor:SetExternalSpeedMultiplier(inst, "esctemplate_speed_mod", 1)
+	inst.components.locomotor:SetExternalSpeedMultiplier(inst, "hornet_speed_mod", 1.25)
 end
 
 local function onbecameghost(inst)
 	-- Remove speed modifier when becoming a ghost
-   inst.components.locomotor:RemoveExternalSpeedMultiplier(inst, "esctemplate_speed_mod")
+   inst.components.locomotor:RemoveExternalSpeedMultiplier(inst, "hornet_speed_mod")
 end
 
 -- When loading or spawning the character
@@ -61,13 +61,10 @@ local master_postinit = function(inst)
 	-- choose which sounds this character will play
 	inst.soundsname = "willow"
 	
-	-- Uncomment if "wathgrithr"(Wigfrid) or "webber" voice is used
-    --inst.talker_path_override = "dontstarve_DLC001/characters/"
-	
 	-- Stats	
-	inst.components.health:SetMaxHealth(TUNING.ESCTEMPLATE_HEALTH)
-	inst.components.hunger:SetMax(TUNING.ESCTEMPLATE_HUNGER)
-	inst.components.sanity:SetMax(TUNING.ESCTEMPLATE_SANITY)
+	inst.components.health:SetMaxHealth(TUNING.HORNET_HEALTH)
+	inst.components.hunger:SetMax(TUNING.HORNET_HUNGER)
+	inst.components.sanity:SetMax(TUNING.HORNET_SANITY)
 	
 	-- Damage multiplier (optional)
     inst.components.combat.damagemultiplier = 1
@@ -80,4 +77,4 @@ local master_postinit = function(inst)
 	
 end
 
-return MakePlayerCharacter("esctemplate", prefabs, assets, common_postinit, master_postinit, prefabs)
+return MakePlayerCharacter("hornet", prefabs, assets, common_postinit, master_postinit, start_inv)
