@@ -54,12 +54,13 @@ end
 local common_postinit = function(inst) 
 	-- Minimap icon
 	inst.MiniMapEntity:SetIcon( "hornet.tex" )
+	
+	--Tags the character as hornet
+	inst:AddTag("ishornet")
 end
 
 -- This initializes for the server only. Components are added here.
 local master_postinit = function(inst)
-	--Tags the character as hornet
-	inst:AddTag("ishornet")
 	
 	-- Set starting inventory
     inst.starting_inventory = start_inv[TheNet:GetServerGameMode()] or start_inv.default
