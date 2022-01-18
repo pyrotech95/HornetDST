@@ -10,16 +10,19 @@ TUNING.HORNET_HUNGER = 150
 TUNING.HORNET_SANITY = 150
 
 -- Custom starting inventory
-TUNING.GAMEMODE_STARTING_ITEMS.DEFAULT.ESCTEMPLATE = {
+TUNING.GAMEMODE_STARTING_ITEMS.DEFAULT.HORNET = {
 	"flint",
 	"flint",
 	"twigs",
 	"twigs",
 }
 
-local start_inv = {}
+local start_inv = {
+	"hneedle1",
+}
+
 for k, v in pairs(TUNING.GAMEMODE_STARTING_ITEMS) do
-    start_inv[string.lower(k)] = v.ESCTEMPLATE
+    start_inv[string.lower(k)] = v.HORNET
 end
 local prefabs = FlattenTree(start_inv, true)
 
@@ -50,11 +53,14 @@ end
 -- This initializes for both the server and client. Tags can be added here.
 local common_postinit = function(inst) 
 	-- Minimap icon
-	inst.MiniMapEntity:SetIcon( "esctemplate.tex" )
+	inst.MiniMapEntity:SetIcon( "hornet.tex" )
 end
 
 -- This initializes for the server only. Components are added here.
 local master_postinit = function(inst)
+	--Tags the character as hornet
+	inst:AddTag("ishornet")
+	
 	-- Set starting inventory
     inst.starting_inventory = start_inv[TheNet:GetServerGameMode()] or start_inv.default
 	
