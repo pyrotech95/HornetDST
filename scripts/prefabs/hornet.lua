@@ -18,7 +18,7 @@ TUNING.GAMEMODE_STARTING_ITEMS.DEFAULT.HORNET = {
 }
 
 local start_inv = {
-	"hneedle1",
+	--"hneedle1",
 }
 
 for k, v in pairs(TUNING.GAMEMODE_STARTING_ITEMS) do
@@ -59,7 +59,7 @@ local common_postinit = function(inst)
 	inst:AddTag("ishornet")
 	
 	--Custom speech font
-	inst.components.talker.font = TALKINGFONT_YOURCHARACTER
+	--inst.components.talker.font = TALKINGFONT_HORNET
 end
 
 -- This initializes for the server only. Components are added here.

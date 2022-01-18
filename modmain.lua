@@ -34,14 +34,14 @@ Assets = {
 	Asset( "IMAGE", "images/names_gold_hornet.tex" ),
     Asset( "ATLAS", "images/names_gold_hornet.xml" ),
 	
-	Asset("FONT", "fonts/talkingfont_hornet.zip"),
+	--Asset("FONT", "fonts/talkingfont_hornet.zip"),
 }
 
-GLOBAL.TALKINGFONT_HORNET = "talkingfont_hornet"
+--GLOBAL.TALKINGFONT_HORNET = "talkingfont_hornet"
 
-AddSimPostInit(function()
-    GLOBAL.TheSim:LoadFont(GLOBAL.resolvefilepath("fonts/talkingfont_hornet.zip"), GLOBAL.TALKINGFONT_HORNET)
-end)
+--AddSimPostInit(function()
+    --GLOBAL.TheSim:LoadFont(GLOBAL.resolvefilepath("fonts/talkingfont_hornet.zip"), GLOBAL.TALKINGFONT_HORNET)
+--end)
 
 AddMinimapAtlas("images/map_icons/hornet.xml")
 
