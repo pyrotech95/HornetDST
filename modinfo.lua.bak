@@ -16,8 +16,8 @@ shipwrecked_compatible = false
 
 all_clients_require_mod = true 
 
-icon_atlas = "modicon.xml"
-icon = "modicon.tex"
+icon_atlas = "Hornet.xml"
+icon = "Hornet.tex"
 
 -- The mod's tags displayed on the server list
 server_filter_tags = {
