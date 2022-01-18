@@ -40,12 +40,18 @@ AddMinimapAtlas("images/map_icons/hornet.xml")
 local require = GLOBAL.require
 local STRINGS = GLOBAL.STRINGS
 
+--local RECIPETABS = GLOBAL.RECIPETABS
+--local Ingredient = GLOBAL.Ingredient
+--local Recipe = GLOBAL.Recipe
+--local TECH = GLOBAL.TECH
+-- Enable these when coded for and needed
+
 -- The character select screen lines
 STRINGS.CHARACTER_TITLES.hornet = "The Sentinel"
 STRINGS.CHARACTER_NAMES.hornet = "Hornet"
-STRINGS.CHARACTER_DESCRIPTIONS.hornet = "*Perk 1\n*Perk 2\n*Perk 3"
+STRINGS.CHARACTER_DESCRIPTIONS.hornet = "*Possesses a weaponised Needle\n*Moves Fast\n*Is suprisingly sane"
 STRINGS.CHARACTER_QUOTES.hornet = "\"No shadow will haunt me...\""
-STRINGS.CHARACTER_SURVIVABILITY.hornet = "Grim"
+STRINGS.CHARACTER_SURVIVABILITY.hornet = "Slim"
 
 -- Custom speech strings
 STRINGS.CHARACTERS.HORNET = require "speech_hornet"
