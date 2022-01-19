@@ -998,7 +998,7 @@ return {
         {
             GENERIC = "Is this child strong enough for this harsh land?",
             ATTACKER = "There is a darkness to this child I did not forsee.",
-            MURDERER = "This child is dangerous, I can't allow him to continue.",
+            MURDERER = "This child is dangerous, I allow him to continue.",
             REVIVER = "I can always count on %s.",
             GHOST = "I know you're having fun, but we'd best find a heart.",
             FIRESTARTER = "So you've decided on fire as your answer, %s.",
