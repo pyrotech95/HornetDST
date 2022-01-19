@@ -40,6 +40,17 @@ Assets = {
 GLOBAL.TALKINGFONT_HORNET = "talkingfont_hornet"
 
 AddSimPostInit(function()
+	GLOBAL.TheSim:UnloadFont(GLOBAL.TALKINGFONT_HORNET)
+	GLOBAL.TheSim:UnloadPrefabs({"hornet_fonts"})
+
+	local Assets = {
+		Asset("FONT", GLOBAL.resolvefilepath("fonts/talkingfont_hornet.zip")),
+	}
+	local FontsPrefab = GLOBAL.Prefab("hornet_fonts", function() return _G.CreateEntity() end, Assets)
+	
+	GLOBAL.RegisterPrefabs(FontsPrefab)
+	GLOBAL.TheSim:LoadPrefabs({"hornet_fonts"})
+	
 	GLOBAL.TheSim:LoadFont(GLOBAL.resolvefilepath("fonts/talkingfont_hornet.zip"), GLOBAL.TALKINGFONT_HORNET)
 end)
 
@@ -63,6 +74,17 @@ STRINGS.CHARACTER_SURVIVABILITY.hornet = "Slim"
 
 -- Custom speech strings
 STRINGS.CHARACTERS.HORNET = require "speech_hornet"
+
+--This could be interesting to do...
+--STRINGS.CHARACTERS.GENERIC.DESCRIBE.MABEL = 
+--{
+	--GENERIC = "What A Cute Girl!",
+	--ATTACKER = "Do I Look Like Bill?",
+	--MURDERER = "What Have You Done...",
+	--REVIVER = "Thank You!",
+	--GHOST = "A Glittery Ghost!",
+--}
+
 
 -- The character's name as appears in-game 
 STRINGS.NAMES.HORNET = "Hornet"

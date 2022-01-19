@@ -431,7 +431,7 @@ return {
         "Is this... messing up my hair?",
         "Hngh...!",
         "Pant... Pant...",
-        "It's tough to move like this.",
+        "This is the worst... experiment...",
     },
     ANNOUNCE_ATRIUM_DESTABILIZING =
     {
@@ -456,7 +456,7 @@ return {
 	ANNOUNCE_INV_FULL = "I can't carry any more stuff!",
 	ANNOUNCE_KNOCKEDOUT = "Ugh, my head!",
 	ANNOUNCE_LOWRESEARCH = "I didn't learn very much from that.",
-	ANNOUNCE_MOSQUITOS = "Perhaps a relative of my homeland's vengeflies?", --rewrite later
+	ANNOUNCE_MOSQUITOS = "Perhaps a relative of my homeland's vengeflies?",
     ANNOUNCE_NOWARDROBEONFIRE = "If it weren't on fire perhaps...",
     ANNOUNCE_NODANGERGIFT = "I can't let my focus slip now.",
     ANNOUNCE_NOMOUNTEDGIFT = "I should get off my beefalo first.",
