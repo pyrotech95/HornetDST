@@ -43,6 +43,17 @@ Assets = {
 GLOBAL.TALKINGFONT_HORNET = "talkingfont_hornet"
 
 AddSimPostInit(function()
+	GLOBAL.TheSim:UnloadFont(GLOBAL.TALKINGFONT_HORNET)
+	GLOBAL.TheSim:UnloadPrefabs({"hornet_fonts"})
+
+	local Assets = {
+		Asset("FONT", GLOBAL.resolvefilepath("fonts/talkingfont_hornet.zip")),
+	}
+	local FontsPrefab = GLOBAL.Prefab("hornet_fonts", function() return _G.CreateEntity() end, Assets)
+	
+	GLOBAL.RegisterPrefabs(FontsPrefab)
+	GLOBAL.TheSim:LoadPrefabs({"hornet_fonts"})
+	
 	GLOBAL.TheSim:LoadFont(GLOBAL.resolvefilepath("fonts/talkingfont_hornet.zip"), GLOBAL.TALKINGFONT_HORNET)
 end)
 
