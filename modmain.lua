@@ -1,7 +1,7 @@
 PrefabFiles = {
 	"hornet",
 	"hornet_none",
-	--"hneedle1",
+	"hneedle1",
 	--"hneedle2",
 	--"hneedle3",
 }
@@ -94,11 +94,13 @@ local skin_modes = {
     },
 }
 
+TUNING.STARTING_ITEM_IMAGE_OVERRIDE.hneedle1 = {atlas = "images/inventoryimages/hneedle1.xml", image = "hneedle1.tex" }
+
 -- Add mod character to mod character list. Also specify a gender. Possible genders are MALE, FEMALE, ROBOT, NEUTRAL, and PLURAL.
 AddModCharacter("hornet", "FEMALE", skin_modes)
 
 --Item stuff
---STRINGS.NAMES.HNEEDLE1 = "Needle"
+STRINGS.NAMES.HNEEDLE1 = "Damaged Needle"
 
 --Recipe("hneedle1", {Ingredient("flint", 1), Ingredient("marble", 1), Ingredient("silk", 4)}, RECIPETABS.WAR, TECH.SCIENCE_ONE, nil, nil, nil, nil, "ishornet")
 --Recipe("hneedle2", {Ingredient("flint", 1), Ingredient("marble", 2), Ingredient("silk", 6)}, RECIPETABS.WAR, TECH.SCIENCE_TWO, nil, nil, nil, nil, "ishornet")
