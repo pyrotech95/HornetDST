@@ -15,10 +15,11 @@ TUNING.GAMEMODE_STARTING_ITEMS.DEFAULT.HORNET = {
 	"flint",
 	"twigs",
 	"twigs",
+	"hneedle1",
 }
 
 local start_inv = {
-	--"hneedle1",
+	"hneedle1",
 }
 
 for k, v in pairs(TUNING.GAMEMODE_STARTING_ITEMS) do
