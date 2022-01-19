@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <spriter_data scml_version="1.0" generator="BrashMonkey Spriter" generator_version="b5">
     <folder id="0" name="face">
-        <file id="0" name="face/face-0.png" width="116" height="92" pivot_x="0.552133" pivot_y="0.47636"/>
+        <file id="0" name="face/face-0.png" width="116" height="92" pivot_x="0.586321" pivot_y="0.809693"/>
         <file id="1" name="face/face-1.png" width="116" height="84" pivot_x="0.558401" pivot_y="0.705958"/>
         <file id="2" name="face/face-2.png" width="116" height="80" pivot_x="0.554091" pivot_y="0.749694"/>
         <file id="3" name="face/face-3.png" width="116" height="88" pivot_x="0.560556" pivot_y="0.692335"/>
@@ -156,13 +156,13 @@
                     <object_ref id="52" name="headbase_hat_1_39" folder="11" file="1" abs_x="263" abs_y="120.699" abs_pivot_x="0.599629" abs_pivot_y="0.187104" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="39" key="0" z_index="52"/>
                     <object_ref id="53" name="hair_2_20" folder="2" file="2" abs_x="0" abs_y="0" abs_pivot_x="0.510986" abs_pivot_y="0.308571" abs_angle="3.517589" abs_scale_x="0.999763" abs_scale_y="0.999763" abs_a="1" timeline="20" key="0" z_index="53"/>
                     <object_ref id="54" name="hair_hat_2_19" folder="10" file="2" abs_x="0" abs_y="0" abs_pivot_x="0.535965" abs_pivot_y="0.435656" abs_angle="3.517589" abs_scale_x="0.999763" abs_scale_y="0.999763" abs_a="1" timeline="19" key="0" z_index="54"/>
-                    <object_ref id="55" name="face_0_0" folder="0" file="0" abs_x="-246.035039" abs_y="139.098909" abs_pivot_x="0.535039" abs_pivot_y="0.401091" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="55"/>
+                    <object_ref id="55" name="face_0_0" folder="0" file="0" abs_x="-240.086321" abs_y="176.690307" abs_pivot_x="0.586321" abs_pivot_y="0.809693" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="55"/>
                     <object_ref id="56" name="face_4_38" folder="0" file="4" abs_x="306.85" abs_y="183.899" abs_pivot_x="0.840965" abs_pivot_y="0.626494" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="38" key="0" z_index="56"/>
                 </key>
             </mainline>
             <timeline id="0" name="face_0_0">
                 <key id="0" spin="0">
-                    <object folder="0" file="0" x="-246.035039" y="139.098909" pivot_x="0.535039" pivot_y="0.401091" angle="0"/>
+                    <object folder="0" file="0" x="-240.086321" y="176.690307" angle="0"/>
                 </key>
             </timeline>
             <timeline id="1" name="headbase_hat_0_1">
