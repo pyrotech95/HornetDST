@@ -1,6 +1,9 @@
 PrefabFiles = {
 	"hornet",
 	"hornet_none",
+	"hneedle1",
+	"hneedle2",
+	"hneedle3",
 }
 
 Assets = {
@@ -39,6 +42,7 @@ AddMinimapAtlas("images/map_icons/hornet.xml")
 
 local require = GLOBAL.require
 local STRINGS = GLOBAL.STRINGS
+
 --local RECIPETABS = GLOBAL.RECIPETABS
 --local Ingredient = GLOBAL.Ingredient
 --local Recipe = GLOBAL.Recipe
