@@ -78,6 +78,17 @@ STRINGS.CHARACTER_SURVIVABILITY.hornet = "Slim"
 -- Custom speech strings
 STRINGS.CHARACTERS.HORNET = require "speech_hornet"
 
+--This could be interesting to do...
+--STRINGS.CHARACTERS.GENERIC.DESCRIBE.MABEL = 
+--{
+	--GENERIC = "What A Cute Girl!",
+	--ATTACKER = "Do I Look Like Bill?",
+	--MURDERER = "What Have You Done...",
+	--REVIVER = "Thank You!",
+	--GHOST = "A Glittery Ghost!",
+--}
+
+
 -- The character's name as appears in-game 
 STRINGS.NAMES.HORNET = "Hornet"
 STRINGS.SKIN_NAMES.hornet_none = "Hornet"
