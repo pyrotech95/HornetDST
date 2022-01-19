@@ -1,7 +1,7 @@
 local assets=
 {
-    Asset("ANIM", "anim/hneedle1.zip"),
-    Asset("ANIM", "anim/swap_hneedle1.zip"),
+    --Asset("ANIM", "anim/hneedle1.zip"),
+    --Asset("ANIM", "anim/swap_hneedle1.zip"),
     Asset("ATLAS", "images/inventoryimages/hneedle1.xml"),
     Asset("IMAGE", "images/inventoryimages/hneedle1.tex"),
 }
@@ -25,22 +25,27 @@ local function fn()
 	local trans = inst.entity:AddTransform()    
 	local anim = inst.entity:AddAnimState()    
 	local sound = inst.entity:AddSoundEmitter()  
-	
-	--inst:AddComponent("weapon")
-    --inst.components.weapon:SetDamage(30)
-	--inst.components.weapon.onattack = onattack
-	
-		MakeInventoryPhysics(inst) 
+	inst.entity:AddNetwork()
+	MakeInventoryPhysics(inst) 
        
-	anim:SetBank("hneedle1")    
-	anim:SetBuild("hneedle1")    
-	anim:PlayAnimation("idle")
+	--anim:SetBank("hneedle1")    
+	--anim:SetBuild("hneedle1")    
+	--anim:PlayAnimation("idle")
+	
+	if not TheWorld.ismastersim then
+		return inst
+	end
+	inst.entity:SetPristine()
 	
 	inst:AddComponent("inspectable")        
 	inst:AddComponent("inventoryitem")  
 	
 	inst.components.inventoryitem.imagename = "hneedle1"    
 	inst.components.inventoryitem.atlasname = "images/inventoryimages/hneedle1.xml"
+	
+	--inst:AddComponent("weapon")
+    --inst.components.weapon:SetDamage(30)
+	--inst.components.weapon.onattack = onattack
 	
 	--local function OnEquip(inst, owner)
 		--if owner:HasTag("ishornet") then
@@ -63,6 +68,7 @@ local function fn()
 	inst:AddComponent("equippable")    
 	inst.components.equippable:SetOnEquip( OnEquip )    
 	inst.components.equippable:SetOnUnequip( OnUnequip )    
+	return inst
 end
 
-return  Prefab("common/inventory/hneedle1", fn, assets, prefabs)
+return Prefab("common/inventory/hneedle1", fn, assets, prefabs)
