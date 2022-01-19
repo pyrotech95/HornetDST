@@ -1,9 +1,9 @@
 PrefabFiles = {
 	"hornet",
 	"hornet_none",
-	"hneedle1",
-	"hneedle2",
-	"hneedle3",
+	--"hneedle1",
+	--"hneedle2",
+	--"hneedle3",
 }
 
 Assets = {
@@ -40,11 +40,11 @@ Assets = {
 	Asset("FONT", "fonts/talkingfont_hornet.zip"),
 }
 
---GLOBAL.TALKINGFONT_HORNET = "talkingfont_hornet"
+GLOBAL.TALKINGFONT_HORNET = "talkingfont_hornet"
 
---AddSimPostInit(function()
-    --GLOBAL.TheSim:LoadFont(GLOBAL.resolvefilepath("fonts/talkingfont_hornet.zip"), GLOBAL.TALKINGFONT_HORNET)
---end)
+AddSimPostInit(function()
+	GLOBAL.TheSim:LoadFont(GLOBAL.resolvefilepath("fonts/talkingfont_hornet.zip"), GLOBAL.TALKINGFONT_HORNET)
+end)
 
 AddMinimapAtlas("images/map_icons/hornet.xml")
 

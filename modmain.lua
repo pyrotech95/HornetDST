@@ -1,7 +1,7 @@
 PrefabFiles = {
 	"hornet",
 	"hornet_none",
-	--"hneedle1",
+	"hneedle1",
 	--"hneedle2",
 	--"hneedle3",
 }
