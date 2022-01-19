@@ -37,15 +37,18 @@ local function fn()
 	end
 	inst.entity:SetPristine()
 	
+	inst:AddComponent("weapon")
+    inst.components.weapon:SetDamage(30)
+	
 	inst:AddComponent("inspectable")        
 	inst:AddComponent("inventoryitem")  
 	
 	inst.components.inventoryitem.imagename = "hneedle1"    
 	inst.components.inventoryitem.atlasname = "images/inventoryimages/hneedle1.xml"
 	
-	inst:AddComponent("weapon")
-    inst.components.weapon:SetDamage(30)
-	inst.components.weapon.onattack = onattack
+	--inst:AddComponent("weapon")
+    --inst.components.weapon:SetDamage(30)
+	--inst.components.weapon.onattack = onattack
 	
 	--local function OnEquip(inst, owner)
 		--if owner:HasTag("ishornet") then
