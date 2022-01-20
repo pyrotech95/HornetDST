@@ -1,7 +1,8 @@
 local assets=
 {
-    --Asset("ANIM", "anim/hneedle1.zip"),
-    --Asset("ANIM", "anim/swap_hneedle1.zip"),
+    Asset("ANIM", "anim/hneedle1.zip"),
+    Asset("ANIM", "anim/swap_hneedle1.zip"),
+	
     Asset("ATLAS", "images/inventoryimages/hneedle1.xml"),
     Asset("IMAGE", "images/inventoryimages/hneedle1.tex"),
 }
@@ -28,9 +29,9 @@ local function fn()
 	inst.entity:AddNetwork()
 	MakeInventoryPhysics(inst) 
        
-	--anim:SetBank("hneedle1")    
-	--anim:SetBuild("hneedle1")    
-	--anim:PlayAnimation("idle")
+	anim:SetBank("hneedle1")    
+	anim:SetBuild("hneedle1")    
+	anim:PlayAnimation("idle")
 	
 	if not TheWorld.ismastersim then
 		return inst
@@ -55,7 +56,7 @@ local function fn()
 		else
             inst:DoTaskInTime(0, function()
                 if owner and owner.components and owner.components.inventory then
-                    owner.components.inventory:GiveItem(inst)
+                   owner.components.inventory:GiveItem(inst)
                     if owner.components.talker then
                         owner.components.talker:Say("This needle wasn't made for me, it's too difficult to use.")
                     end
