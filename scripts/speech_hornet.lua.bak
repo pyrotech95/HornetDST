@@ -12,7 +12,7 @@ return {
 	{
         APPRAISE =
         {
-            NOTNOW = "They appear to be busy.",
+            NOTNOW = "They appear to be preoccupied.",
         },
         REPAIR =
         {
@@ -106,7 +106,7 @@ return {
             DEAD = "This would be wasted on this one.",
             SLEEPING = "Too unconscious to care.",
             BUSY = "I'll try again in a second.",
-            ABIGAILHEART = "It was worth a shot.",
+            ABIGAILHEART = "Fate appears to have other plans for you.",
             GHOSTHEART = "Perhaps this is a bad idea.",
             NOTGEM = "I'm not sticking that in there!",
             WRONGGEM = "This gem won't work here.",
@@ -431,7 +431,7 @@ return {
         "Is this... messing up my hair?",
         "Hngh...!",
         "Pant... Pant...",
-        "This is the worst... experiment...",
+        "It's tough to move like this.",
     },
     ANNOUNCE_ATRIUM_DESTABILIZING =
     {
@@ -456,7 +456,7 @@ return {
 	ANNOUNCE_INV_FULL = "I can't carry any more stuff!",
 	ANNOUNCE_KNOCKEDOUT = "Ugh, my head!",
 	ANNOUNCE_LOWRESEARCH = "I didn't learn very much from that.",
-	ANNOUNCE_MOSQUITOS = "Perhaps a relative of my homeland's vengeflies?",
+	ANNOUNCE_MOSQUITOS = "Perhaps a relative of my homeland's vengeflies?", --rewrite later
     ANNOUNCE_NOWARDROBEONFIRE = "If it weren't on fire perhaps...",
     ANNOUNCE_NODANGERGIFT = "I can't let my focus slip now.",
     ANNOUNCE_NOMOUNTEDGIFT = "I should get off my beefalo first.",

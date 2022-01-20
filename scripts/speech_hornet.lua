@@ -12,7 +12,7 @@ return {
 	{
         APPRAISE =
         {
-            NOTNOW = "They appear to be busy.",
+            NOTNOW = "They appear to be preoccupied.",
         },
         REPAIR =
         {
@@ -106,8 +106,8 @@ return {
             DEAD = "This would be wasted on this one.",
             SLEEPING = "Too unconscious to care.",
             BUSY = "I'll try again in a second.",
-            ABIGAILHEART = "It was worth a shot.",
-            GHOSTHEART = "Perhaps this is a bad idea.",
+            ABIGAILHEART = "Fate appears to have other plans for you.",
+            GHOSTHEART = "A second chance is rare, use it well.",
             NOTGEM = "I'm not sticking that in there!",
             WRONGGEM = "This gem won't work here.",
             NOTSTAFF = "It's not quite the right shape.",
