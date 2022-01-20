@@ -2,7 +2,6 @@ local assets=
 {
     Asset("ANIM", "anim/hneedle1.zip"),
     Asset("ANIM", "anim/swap_hneedle1.zip"),
-	
     Asset("ATLAS", "images/inventoryimages/hneedle1.xml"),
     Asset("IMAGE", "images/inventoryimages/hneedle1.tex"),
 }
@@ -39,7 +38,7 @@ local function fn()
 	inst.entity:SetPristine()
 	
 	inst:AddComponent("weapon")
-    inst.components.weapon:SetDamage(30)
+    inst.components.weapon:SetDamage(35)
 	
 	inst:AddComponent("inspectable")        
 	inst:AddComponent("inventoryitem")  
@@ -52,7 +51,6 @@ local function fn()
 			owner.AnimState:OverrideSymbol("swap_object", "swap_hneedle1", "swap_hneedle1")
 			owner.AnimState:Show("ARM_carry")
 			owner.AnimState:Hide("ARM_normal")
-			--owner.components.talker:Say("Damaged, but still functional")
 		else
             inst:DoTaskInTime(0, function()
                 if owner and owner.components and owner.components.inventory then

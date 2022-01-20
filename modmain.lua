@@ -2,8 +2,8 @@ PrefabFiles = {
 	"hornet",
 	"hornet_none",
 	"hneedle1",
-	--"hneedle2",
-	--"hneedle3",
+	"hneedle2",
+	"hneedle3",
 }
 
 Assets = {
@@ -115,6 +115,15 @@ STRINGS.NAMES.HNEEDLE1 = "Damaged Needle"
 GLOBAL.STRINGS.CHARACTERS.GENERIC.DESCRIBE.HNEEDLE1 = "Looks like a giant needle. Not sure what I'd use it for..."
 GLOBAL.STRINGS.CHARACTERS.HORNET.DESCRIBE.HNEEDLE1 = "Damaged, but still functional"
 
+STRINGS.NAMES.HNEEDLE2 = "Repaired Needle"
+GLOBAL.STRINGS.CHARACTERS.GENERIC.DESCRIBE.HNEEDLE2 = "A giant needle. Not sure what I'd use it for..."
+GLOBAL.STRINGS.CHARACTERS.HORNET.DESCRIBE.HNEEDLE2 = "Repaired, but not what it was."
+
+STRINGS.NAMES.HNEEDLE3 = "Restored Needle"
+GLOBAL.STRINGS.CHARACTERS.GENERIC.DESCRIBE.HNEEDLE3 = "A giant needle. Not sure what I'd use it for..."
+GLOBAL.STRINGS.CHARACTERS.HORNET.DESCRIBE.HNEEDLE3 = "Restored to it's former glory."
+
+--Recipes
 --Recipe("hneedle1", {Ingredient("flint", 1), Ingredient("marble", 1), Ingredient("silk", 4)}, RECIPETABS.WAR, TECH.SCIENCE_ONE, nil, nil, nil, nil, "ishornet")
 --Recipe("hneedle2", {Ingredient("flint", 1), Ingredient("marble", 2), Ingredient("silk", 6)}, RECIPETABS.WAR, TECH.SCIENCE_TWO, nil, nil, nil, nil, "ishornet")
 --Recipe("hneedle3", {Ingredient("flint", 1), Ingredient("marble", 3), Ingredient("silk", 8)}, RECIPETABS.WAR, TECH.MAGIC_THREE, nil, nil, nil, nil, "ishornet")
