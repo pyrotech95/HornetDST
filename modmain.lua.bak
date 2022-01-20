@@ -79,7 +79,7 @@ STRINGS.CHARACTER_SURVIVABILITY.hornet = "Slim"
 STRINGS.CHARACTERS.HORNET = require "speech_hornet"
 
 --This could be interesting to do...
---STRINGS.CHARACTERS.GENERIC.DESCRIBE.MABEL = 
+--STRINGS.CHARACTERS.GENERIC.DESCRIBE.HORNET = 
 --{
 	--GENERIC = "What A Cute Girl!",
 	--ATTACKER = "Do I Look Like Bill?",
@@ -112,8 +112,8 @@ AddModCharacter("hornet", "FEMALE", skin_modes)
 
 --Item stuff
 STRINGS.NAMES.HNEEDLE1 = "Damaged Needle"
-GLOBAL.STRINGS.CHARACTERS.GENERIC.DESCRIBE.HNEEDLE1 = "
-GLOBAL.STRINGS.CHARACTERS.HORNET.DESCRIBE.HNEEDLE1 = "
+GLOBAL.STRINGS.CHARACTERS.GENERIC.DESCRIBE.HNEEDLE1 = "Looks like a giant needle. Not sure what I'd use it for..."
+GLOBAL.STRINGS.CHARACTERS.HORNET.DESCRIBE.HNEEDLE1 = "My needle was damaged when I was transported here. It should still be functional though."
 
 --Recipe("hneedle1", {Ingredient("flint", 1), Ingredient("marble", 1), Ingredient("silk", 4)}, RECIPETABS.WAR, TECH.SCIENCE_ONE, nil, nil, nil, nil, "ishornet")
 --Recipe("hneedle2", {Ingredient("flint", 1), Ingredient("marble", 2), Ingredient("silk", 6)}, RECIPETABS.WAR, TECH.SCIENCE_TWO, nil, nil, nil, nil, "ishornet")

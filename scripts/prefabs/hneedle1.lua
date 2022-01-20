@@ -46,23 +46,23 @@ local function fn()
 	inst.components.inventoryitem.imagename = "hneedle1"    
 	inst.components.inventoryitem.atlasname = "images/inventoryimages/hneedle1.xml"
 	
-	--local function OnEquip(inst, owner)
-		--if owner:HasTag("ishornet") then
-			--owner.AnimState:OverrideSymbol("swap_object", "swap_hneedle1", "swap_hneedle1")
-			--owner.AnimState:Show("ARM_carry")
-			--owner.AnimState:Hide("ARM_normal")
+	local function OnEquip(inst, owner)
+		if owner:HasTag("ishornet") then
+			owner.AnimState:OverrideSymbol("swap_object", "swap_hneedle1", "swap_hneedle1")
+			owner.AnimState:Show("ARM_carry")
+			owner.AnimState:Hide("ARM_normal")
 			--owner.components.talker:Say("Damaged, but still functional")
-		--else
-            --inst:DoTaskInTime(0, function()
-                --if owner and owner.components and owner.components.inventory then
-                    --owner.components.inventory:GiveItem(inst)
-                    --if owner.components.talker then
-                        --owner.components.talker:Say("This needle wasn't made for me, it's too difficult to use.")
-                    --end
-                --end
-            --end)
-		--end 
-	--end
+		else
+            inst:DoTaskInTime(0, function()
+                if owner and owner.components and owner.components.inventory then
+                    owner.components.inventory:GiveItem(inst)
+                    if owner.components.talker then
+                        owner.components.talker:Say("This needle wasn't made for me, it's too difficult to use.")
+                    end
+                end
+            end)
+		end 
+	end
 	
 	inst:AddComponent("equippable")    
 	inst.components.equippable:SetOnEquip( OnEquip )    
