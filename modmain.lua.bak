@@ -112,8 +112,8 @@ AddModCharacter("hornet", "FEMALE", skin_modes)
 
 --Item stuff
 STRINGS.NAMES.HNEEDLE1 = "Damaged Needle"
---GLOBAL.STRINGS.CHARACTERS.GENERIC.DESCRIBE.HNEEDLE1 = ""
---GLOBAL.STRINGS.CHARACTERS.HORNET.DESCRIBE.HNEEDLE1 = ""
+GLOBAL.STRINGS.CHARACTERS.GENERIC.DESCRIBE.HNEEDLE1 = "
+GLOBAL.STRINGS.CHARACTERS.HORNET.DESCRIBE.HNEEDLE1 = "
 
 --Recipe("hneedle1", {Ingredient("flint", 1), Ingredient("marble", 1), Ingredient("silk", 4)}, RECIPETABS.WAR, TECH.SCIENCE_ONE, nil, nil, nil, nil, "ishornet")
 --Recipe("hneedle2", {Ingredient("flint", 1), Ingredient("marble", 2), Ingredient("silk", 6)}, RECIPETABS.WAR, TECH.SCIENCE_TWO, nil, nil, nil, nil, "ishornet")
