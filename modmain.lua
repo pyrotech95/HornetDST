@@ -62,12 +62,6 @@ AddMinimapAtlas("images/map_icons/hornet.xml")
 local require = GLOBAL.require
 local STRINGS = GLOBAL.STRINGS
 
---local RECIPETABS = GLOBAL.RECIPETABS
---local Ingredient = GLOBAL.Ingredient
---local Recipe = GLOBAL.Recipe
---local TECH = GLOBAL.TECH
--- Enable these when coded for and needed
-
 -- The character select screen lines
 STRINGS.CHARACTER_TITLES.hornet = "The Sentinel"
 STRINGS.CHARACTER_NAMES.hornet = "Hornet"
@@ -81,11 +75,11 @@ STRINGS.CHARACTERS.HORNET = require "speech_hornet"
 --This could be interesting to do...
 --STRINGS.CHARACTERS.GENERIC.DESCRIBE.HORNET = 
 --{
-	--GENERIC = "What A Cute Girl!",
+	--GENERIC = " That mask's kind of creepy",
 	--ATTACKER = "Do I Look Like Bill?",
 	--MURDERER = "What Have You Done...",
 	--REVIVER = "Thank You!",
-	--GHOST = "A Glittery Ghost!",
+	--GHOST = "A lost soul.",
 --}
 
 
@@ -124,6 +118,11 @@ GLOBAL.STRINGS.CHARACTERS.GENERIC.DESCRIBE.HNEEDLE3 = "A giant needle. Not sure 
 GLOBAL.STRINGS.CHARACTERS.HORNET.DESCRIBE.HNEEDLE3 = "Restored to it's former glory."
 
 --Recipes
---Recipe("hneedle1", {Ingredient("flint", 1), Ingredient("marble", 1), Ingredient("silk", 4)}, RECIPETABS.WAR, TECH.SCIENCE_ONE, nil, nil, nil, nil, "ishornet")
---Recipe("hneedle2", {Ingredient("flint", 1), Ingredient("marble", 2), Ingredient("silk", 6)}, RECIPETABS.WAR, TECH.SCIENCE_TWO, nil, nil, nil, nil, "ishornet")
---Recipe("hneedle3", {Ingredient("flint", 1), Ingredient("marble", 3), Ingredient("silk", 8)}, RECIPETABS.WAR, TECH.MAGIC_THREE, nil, nil, nil, nil, "ishornet")
+local RECIPETABS = GLOBAL.RECIPETABS
+local Ingredient = GLOBAL.Ingredient
+local Recipe = GLOBAL.Recipe
+local TECH = GLOBAL.TECH
+
+Recipe("hneedle1", {Ingredient("flint", 1), Ingredient("marble", 1), Ingredient("silk", 4)}, RECIPETABS.WAR, TECH.SCIENCE_ONE, nil, nil, nil, nil, "ishornet", "images/inventoryimages/hneedle1.xml", "hneedle1.tex")
+Recipe("hneedle2", {Ingredient("flint", 1), Ingredient("marble", 2), Ingredient("silk", 6)}, RECIPETABS.WAR, TECH.SCIENCE_TWO, nil, nil, nil, nil, "ishornet", "images/inventoryimages/hneedle2.xml", "hneedle2.tex")
+Recipe("hneedle3", {Ingredient("flint", 1), Ingredient("marble", 3), Ingredient("silk", 8)}, RECIPETABS.WAR, TECH.MAGIC_THREE, nil, nil, nil, nil, "ishornet", "images/inventoryimages/hneedle2.xml", "hneedle2.tex")
