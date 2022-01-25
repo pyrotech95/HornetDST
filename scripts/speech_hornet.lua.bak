@@ -107,7 +107,7 @@ return {
             SLEEPING = "Too unconscious to care.",
             BUSY = "I'll try again in a second.",
             ABIGAILHEART = "Fate appears to have other plans for you.",
-            GHOSTHEART = "Perhaps this is a bad idea.",
+            GHOSTHEART = "A second chance is rare, use it well.",
             NOTGEM = "I'm not sticking that in there!",
             WRONGGEM = "This gem won't work here.",
             NOTSTAFF = "It's not quite the right shape.",
@@ -967,7 +967,7 @@ return {
         },
         WORMWOOD =
         {
-            GENERIC = "Greetings, %s!",
+            GENERIC = "Another creature of the greenpath perhaps? Though not one I've seen before...",
             ATTACKER = "%s seems pricklier than usual today.",
             MURDERER = "Prepare to get weed whacked, %s!",
             REVIVER = "%s never gives up on his friends.",
@@ -990,7 +990,7 @@ return {
             ATTACKER = "I sense the beast within you rising...",
             MURDERER = "Just another of this land's many beasts, your fate is no different to theirs.",
             REVIVER = "Why thank you, %s!",
-            GHOST = "%s is looking greener around the gills than usual.",
+            GHOST = "One less beast in the world, though this one was different than most.",
             FIRESTARTER = "So you've decided on fire as your answer, %s.",
         },
 
@@ -1000,7 +1000,7 @@ return {
             ATTACKER = "There is a darkness to this child I did not forsee.",
             MURDERER = "This child is dangerous, I can't allow him to continue.",
             REVIVER = "Child, I am grateful for the second chance.",
-            GHOST = "So young... Caan I change his fate?",
+            GHOST = "So young... Can I change his fate?",
             FIRESTARTER = "Fire is dangerous child, be careful using it.",
         },
 
@@ -2753,7 +2753,7 @@ return {
             BURNING = "That's burning fast!",
 			BURNT = "It's out of style now.",
 		},
-		WARG = "You might be something to reckon with, big dog.",
+		WARG = "A terrible beast, I will remove you from this plane.",
 		WASPHIVE = "I think those bees are mad.",
 		WATERBALLOON = "What a scientific marvel!",
 		WATERMELON = "Sticky sweet.",
