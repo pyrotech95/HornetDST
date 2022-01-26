@@ -72,14 +72,33 @@ STRINGS.CHARACTER_SURVIVABILITY.hornet = "Slim"
 -- Custom speech strings
 STRINGS.CHARACTERS.HORNET = require "speech_hornet"
 
---This could be interesting to do...
---STRINGS.CHARACTERS.GENERIC.DESCRIBE.HORNET = 
+--This could be interesting to do... May not currently function
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.HORNET = 
+{
+	GENERIC = "That mask's kind of creepy.",
+	ATTACKER = "Test String Attack.",
+	MURDERER = "Test String murder.",
+	REVIVER = "Test String revive.",
+	GHOST = "A lost soul.",
+}
+
+STRINGS.CHARACTERS.WILSON.DESCRIBE.HORNET = 
+{
+	GENERIC = "Test String 1 from wilson.",
+	ATTACKER = "Test String Attack from wilson.",
+	MURDERER = "Test String murder from wilson.",
+	REVIVER = "Test String revive from wilson.",
+	GHOST = "Test String Ghost from wilson.",
+}
+
+--if hollow knight mod is present
+--STRINGS.CHARACTERS.HORNET.DESCRIBE.HOLLOWKNIGHT =
 --{
-	--GENERIC = " That mask's kind of creepy",
-	--ATTACKER = "Do I Look Like Bill?",
-	--MURDERER = "What Have You Done...",
-	--REVIVER = "Thank You!",
-	--GHOST = "A lost soul.",
+	--GENERIC = "Test String 1.",
+	--ATTACKER = "Test String Attack.",
+	--MURDERER = "Test String murder.",
+	--REVIVER = "Test String revive.",
+	--GHOST = "Test String Ghost.",
 --}
 
 
