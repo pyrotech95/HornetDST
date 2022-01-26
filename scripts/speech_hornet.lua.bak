@@ -12,7 +12,7 @@ return {
 	{
         APPRAISE =
         {
-            NOTNOW = "They appear to be preoccupied.",
+            NOTNOW = "They appear preoccupied.",
         },
         REPAIR =
         {
@@ -972,7 +972,7 @@ return {
             MURDERER = "Prepare to get weed whacked, %s!",
             REVIVER = "%s never gives up on his friends.",
             GHOST = "You need some help, lil guy?",
-            FIRESTARTER = "So you've decided on fire as your answer, %s.",
+            FIRESTARTER = "Is playing with fire wise for a beast of leaves?",
         },
         WARLY =
         {

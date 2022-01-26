@@ -12,7 +12,7 @@ return {
 	{
         APPRAISE =
         {
-            NOTNOW = "They appear to be preoccupied.",
+            NOTNOW = "They appear preoccupied.",
         },
         REPAIR =
         {
@@ -36,7 +36,7 @@ return {
 			GENERIC = "There's no space in here.",
 			NOTALLOWED = "That does not belong in there.",
 			INUSE = "I shall wait.",
-            NOTMASTERCHEF = "I'm not a fancy enough chef for that.",
+            NOTMASTERCHEF = "My talents as a chef fall short of those required for this.",
 		},
         CONSTRUCT =
         {
