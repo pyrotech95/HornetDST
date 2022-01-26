@@ -57,6 +57,31 @@ AddSimPostInit(function()
 	GLOBAL.TheSim:LoadFont(GLOBAL.resolvefilepath("fonts/talkingfont_hornet.zip"), GLOBAL.TALKINGFONT_HORNET)
 end)
 
+--Hollow knight mod compat
+local HollowKnightPresent = false
+
+if GLOBAL.TheNet:GetIsClient() then
+	local EnabledServerMods = GLOBAL.TheNet:GetServerModNames()
+	for k, v in pairs(EnabledServerMods) do
+		if v == "workshop-1364606782" then
+			HollowKnightPresent = true
+		end
+	end
+end
+
+if GLOBAL.KnownModIndex then
+	if GLOBAL.KnownModIndex:IsModEnabled("workshop-1364606782") then
+		HollowKnightPresent = true
+	end
+end
+
+--Test string
+if HollowKnightPresent then
+	print("Hornet mod - Hollow Knight mod compat enabled")
+end
+
+--End of Hollow knight mod compat check
+
 AddMinimapAtlas("images/map_icons/hornet.xml")
 
 local require = GLOBAL.require
@@ -72,6 +97,8 @@ STRINGS.CHARACTER_SURVIVABILITY.hornet = "Slim"
 -- Custom speech strings
 STRINGS.CHARACTERS.HORNET = require "speech_hornet"
 
+--modimport("scripts/descriptions_hornet.lua")
+
 --This could be interesting to do... May not currently function
 STRINGS.CHARACTERS.GENERIC.DESCRIBE.HORNET = 
 {
@@ -82,24 +109,26 @@ STRINGS.CHARACTERS.GENERIC.DESCRIBE.HORNET =
 	GHOST = "A lost soul.",
 }
 
-STRINGS.CHARACTERS.WILSON.DESCRIBE.HORNET = 
-{
-	GENERIC = "Test String 1 from wilson.",
-	ATTACKER = "Test String Attack from wilson.",
-	MURDERER = "Test String murder from wilson.",
-	REVIVER = "Test String revive from wilson.",
-	GHOST = "Test String Ghost from wilson.",
-}
-
---if hollow knight mod is present
---STRINGS.CHARACTERS.HORNET.DESCRIBE.HOLLOWKNIGHT =
+--STRINGS.CHARACTERS.WILLOW.DESCRIBE.HORNET = --Doesn't work yet 
 --{
-	--GENERIC = "Test String 1.",
-	--ATTACKER = "Test String Attack.",
-	--MURDERER = "Test String murder.",
-	--REVIVER = "Test String revive.",
-	--GHOST = "Test String Ghost.",
+	--GENERIC = "Test String 1 from willow.",
+	--ATTACKER = "Test String Attack from willow.",
+	--MURDERER = "Test String murder from willow.",
+	--REVIVER = "Test String revive from willow.",
+	--GHOST = "Test String Ghost from willow.",
 --}
+
+--Hollow knight mod examine text cross compat
+if HollowKnightPresent then
+	STRINGS.CHARACTERS.HORNET.DESCRIBE.HOLLOWKNIGHT =
+	{
+		GENERIC = "Again we meet little ghost.",
+		ATTACKER = "Come no closer, ghost.",
+		MURDERER = "I will not stand idle little ghost. Your actions must be stopped.",
+		REVIVER = "Once again you give me hope little ghost.",
+		GHOST = "Test String Ghost.",
+	}
+end
 
 
 -- The character's name as appears in-game 
@@ -118,6 +147,7 @@ local skin_modes = {
     },
 }
 
+-- Needed because programming is weird like that. Otherwise the item would be invisible
 TUNING.STARTING_ITEM_IMAGE_OVERRIDE.hneedle1 = {atlas = "images/inventoryimages/hneedle1.xml", image = "hneedle1.tex" }
 
 -- Add mod character to mod character list. Also specify a gender. Possible genders are MALE, FEMALE, ROBOT, NEUTRAL, and PLURAL.
@@ -133,7 +163,7 @@ GLOBAL.STRINGS.CHARACTERS.GENERIC.DESCRIBE.HNEEDLE2 = "A giant needle. Not sure 
 GLOBAL.STRINGS.CHARACTERS.HORNET.DESCRIBE.HNEEDLE2 = "Repaired, but not what it was."
 
 STRINGS.NAMES.HNEEDLE3 = "Restored Needle"
-GLOBAL.STRINGS.CHARACTERS.GENERIC.DESCRIBE.HNEEDLE3 = "A giant needle. Not sure what I'd use it for..."
+GLOBAL.STRINGS.CHARACTERS.GENERIC.DESCRIBE.HNEEDLE3 = "A giant needle. Beautiful, but useless..."
 GLOBAL.STRINGS.CHARACTERS.HORNET.DESCRIBE.HNEEDLE3 = "Restored to it's former glory."
 
 --Recipes
