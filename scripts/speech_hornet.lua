@@ -864,7 +864,7 @@ return {
         {
             GENERIC = "This one is loved by the shadows.",
             ATTACKER = "Seems you've gone from \"dapper\" to \"slapper\".",
-            MURDERER = "I'll show you Logic and Reason... those're my fists!",
+            MURDERER = "I'll end your reign of shadows.",
             REVIVER = "%s, you would allow me another chance?",
             GHOST = "Don't look at me like that, %s! I'm working on it!",
             FIRESTARTER = "So you've decided on fire as your answer, %s.",
@@ -1825,8 +1825,8 @@ return {
 		FEM_PUPPET = "She's trapped!", --single player
 		FIREFLIES =
 		{
-			GENERIC = "If only I could catch them!",
-			HELD = "They make my pocket glow!",
+			GENERIC = "Lumaflies? No, these seem different.",
+			HELD = "Thankfully these don't shock me like lumaflies.",
 		},
 		FIREHOUND = "That one is glowy.",
 		FIREPIT =
