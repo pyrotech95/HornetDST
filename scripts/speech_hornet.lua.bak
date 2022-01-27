@@ -431,7 +431,7 @@ return {
         "Is this... messing up my hair?",
         "Hngh...!",
         "Pant... Pant...",
-        "This is the worst... experiment...",
+        "It's tough to move like this.",
     },
     ANNOUNCE_ATRIUM_DESTABILIZING =
     {
@@ -456,7 +456,7 @@ return {
 	ANNOUNCE_INV_FULL = "I can't carry any more stuff!",
 	ANNOUNCE_KNOCKEDOUT = "Ugh, my head!",
 	ANNOUNCE_LOWRESEARCH = "I didn't learn very much from that.",
-	ANNOUNCE_MOSQUITOS = "Perhaps a relative of my homeland's vengeflies?",
+	ANNOUNCE_MOSQUITOS = "Perhaps a relative of my homeland's vengeflies?", --rewrite later
     ANNOUNCE_NOWARDROBEONFIRE = "If it weren't on fire perhaps...",
     ANNOUNCE_NODANGERGIFT = "I can't let my focus slip now.",
     ANNOUNCE_NOMOUNTEDGIFT = "I should get off my beefalo first.",
@@ -864,7 +864,7 @@ return {
         {
             GENERIC = "This one is loved by the shadows.",
             ATTACKER = "Seems you've gone from \"dapper\" to \"slapper\".",
-            MURDERER = "I'll show you Logic and Reason... those're my fists!",
+            MURDERER = "I'll end your reign of shadows.",
             REVIVER = "%s, you would allow me another chance?",
             GHOST = "Don't look at me like that, %s! I'm working on it!",
             FIRESTARTER = "So you've decided on fire as your answer, %s.",
@@ -1826,7 +1826,7 @@ return {
 		FIREFLIES =
 		{
 			GENERIC = "If only I could catch them!",
-			HELD = "They make my pocket glow!",
+			HELD = "Thankfully these don't shock me like lumaflies.",
 		},
 		FIREHOUND = "That one is glowy.",
 		FIREPIT =

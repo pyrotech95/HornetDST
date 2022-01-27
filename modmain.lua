@@ -97,26 +97,27 @@ STRINGS.CHARACTER_SURVIVABILITY.hornet = "Slim"
 -- Custom speech strings
 STRINGS.CHARACTERS.HORNET = require "speech_hornet"
 
+--Would allow me to tidy this all up a bit and move the description stuff
 --modimport("scripts/descriptions_hornet.lua")
 
---This could be interesting to do... May not currently function
+--Probably works maybe?
 STRINGS.CHARACTERS.GENERIC.DESCRIBE.HORNET = 
 {
 	GENERIC = "That mask's kind of creepy.",
-	ATTACKER = "Test String Attack.",
-	MURDERER = "Test String murder.",
-	REVIVER = "Test String revive.",
+	ATTACKER = "I don't like the way they're holding that needle...",
+	MURDERER = "Murderer!",
+	REVIVER = "Maybe %s isn't completely cold.",
 	GHOST = "A lost soul.",
 }
 
---STRINGS.CHARACTERS.WILLOW.DESCRIBE.HORNET = --Doesn't work yet 
---{
-	--GENERIC = "Test String 1 from willow.",
-	--ATTACKER = "Test String Attack from willow.",
-	--MURDERER = "Test String murder from willow.",
-	--REVIVER = "Test String revive from willow.",
-	--GHOST = "Test String Ghost from willow.",
---}
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.HORNET = --Maybe works? 
+{
+	GENERIC = "Test String 1 from willow.",
+	ATTACKER = "Test String Attack from willow.",
+	MURDERER = "Test String murder from willow.",
+	REVIVER = "%s reignited my flame.",
+	GHOST = "Test String Ghost from willow.",
+}
 
 --Hollow knight mod examine text cross compat
 if HollowKnightPresent then
@@ -126,7 +127,7 @@ if HollowKnightPresent then
 		ATTACKER = "Come no closer, ghost.",
 		MURDERER = "I will not stand idle little ghost. Your actions must be stopped.",
 		REVIVER = "Once again you give me hope little ghost.",
-		GHOST = "Test String Ghost.",
+		GHOST = "You were born of the abyss. Now it seems you have returned to it.",
 	}
 end
 
