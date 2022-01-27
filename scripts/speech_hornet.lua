@@ -912,16 +912,16 @@ return {
         },
         WES = --started, not finished
         {
-            GENERIC = "Greetings, %s!",
-            ATTACKER = "%s is silent, but deadly...",
-            MURDERER = "Mime this!",
-            REVIVER = "%s thinks outside the invisible box.",
+            GENERIC = "I doubt this one will last long.",
+            ATTACKER = "One such as you will not suvive such aggression.",
+            MURDERER = "Have I underestimated you %s? I shall end you now.",
+            REVIVER = "%s thinks outside the invisible box.", --this one's tough
             GHOST = 
 			{ 
 			 "Fate is cruel to the weaker among us...",
 			 "I feel no sadness in this weakling's demise",
 			} --I think I may dislike wes too much...
-            FIRESTARTER = "So you've decided on fire as your answer, %s.",
+            FIRESTARTER = "So you've decided on fire as your answer, %s.", --tbd
         },
         WEBBER =
         {

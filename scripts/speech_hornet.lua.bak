@@ -910,12 +910,12 @@ return {
             GHOST = "This doesn't seem very scientific, does it, %s?",
             FIRESTARTER = "So you've decided on fire as your answer, %s.",
         },
-        WES =
+        WES = --started, not finished
         {
-            GENERIC = "Greetings, %s!",
-            ATTACKER = "%s is silent, but deadly...",
-            MURDERER = "Mime this!",
-            REVIVER = "%s thinks outside the invisible box.",
+            GENERIC = "I doubt this one will last long.",
+            ATTACKER = "One such as you will not suvive such aggression.",
+            MURDERER = "Have I underestimated you %s? I shall end you now.",
+            REVIVER = "%s thinks outside the invisible box.", --this one's tough
             GHOST = 
 			{ 
 			 "Fate is cruel to the weaker among us...",
