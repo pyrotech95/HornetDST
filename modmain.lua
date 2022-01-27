@@ -110,13 +110,14 @@ STRINGS.CHARACTERS.GENERIC.DESCRIBE.HORNET =
 	GHOST = "A lost soul.",
 }
 
-STRINGS.CHARACTERS.WILLOW.DESCRIBE.HORNET = --Maybe works? 
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.HORNET = --Seems to work... probably? 
 {
-	GENERIC = "Test String 1 from willow.",
-	ATTACKER = "Test String Attack from willow.",
-	MURDERER = "Test String murder from willow.",
+	GENERIC = "Hi %s!",
+	ATTACKER = "You seem a little prickly today %s.",
+	MURDERER = "Prepare for imolation murderer.", --this needs changed, but for now
 	REVIVER = "%s reignited my flame.",
-	GHOST = "Test String Ghost from willow.",
+	GHOST = "Ghosts don't catch well... Better get a heart.",
+	FIRESTARTER = "Get that fire started %s.",
 }
 
 --Hollow knight mod examine text cross compat
@@ -128,6 +129,14 @@ if HollowKnightPresent then
 		MURDERER = "I will not stand idle little ghost. Your actions must be stopped.",
 		REVIVER = "Once again you give me hope little ghost.",
 		GHOST = "You were born of the abyss. Now it seems you have returned to it.",
+	}
+	STRINGS.CHARACTERS.HOLLOWKNIGHT.DESCRIBE.HORNET = 
+	{
+		GENERIC = "...",
+		ATTACKER = "...",
+		MURDERER = "...",
+		REVIVER = "...",
+		GHOST = "...",
 	}
 end
 
