@@ -1,7 +1,7 @@
 local assets=
 {
-    --Asset("ANIM", "anim/hneedle1.zip"),
-    --Asset("ANIM", "anim/swap_hneedle1.zip"),
+    Asset("ANIM", "anim/hneedle1.zip"),
+    Asset("ANIM", "anim/swap_hneedle1.zip"),
     Asset("ATLAS", "images/inventoryimages/hneedle1.xml"),
     Asset("IMAGE", "images/inventoryimages/hneedle1.tex"),
 }
@@ -28,9 +28,9 @@ local function fn()
 	inst.entity:AddNetwork()
 	MakeInventoryPhysics(inst) 
        
-	--anim:SetBank("hneedle1")    
-	--anim:SetBuild("hneedle1")    
-	--anim:PlayAnimation("idle")
+	anim:SetBank("hneedle1")    
+	anim:SetBuild("hneedle1")    
+	anim:PlayAnimation("idle")
 	
 	if not TheWorld.ismastersim then
 		return inst
@@ -38,7 +38,7 @@ local function fn()
 	inst.entity:SetPristine()
 	
 	inst:AddComponent("weapon")
-    inst.components.weapon:SetDamage(30)
+    inst.components.weapon:SetDamage(35)
 	
 	inst:AddComponent("inspectable")        
 	inst:AddComponent("inventoryitem")  
@@ -46,23 +46,22 @@ local function fn()
 	inst.components.inventoryitem.imagename = "hneedle1"    
 	inst.components.inventoryitem.atlasname = "images/inventoryimages/hneedle1.xml"
 	
-	--local function OnEquip(inst, owner)
-		--if owner:HasTag("ishornet") then
-			--owner.AnimState:OverrideSymbol("swap_object", "swap_hneedle1", "swap_hneedle1")
-			--owner.AnimState:Show("ARM_carry")
-			--owner.AnimState:Hide("ARM_normal")
-			--owner.components.talker:Say("Damaged, but still functional")
-		--else
-            --inst:DoTaskInTime(0, function()
-                --if owner and owner.components and owner.components.inventory then
-                    --owner.components.inventory:GiveItem(inst)
-                    --if owner.components.talker then
-                        --owner.components.talker:Say("This needle wasn't made for me, it's too difficult to use.")
-                    --end
-                --end
-            --end)
-		--end 
-	--end
+	local function OnEquip(inst, owner)
+		if owner:HasTag("ishornet") then
+			owner.AnimState:OverrideSymbol("swap_object", "swap_hneedle1", "swap_hneedle1")
+			owner.AnimState:Show("ARM_carry")
+			owner.AnimState:Hide("ARM_normal")
+		else
+            inst:DoTaskInTime(0, function()
+                if owner and owner.components and owner.components.inventory then
+                   owner.components.inventory:GiveItem(inst)
+                    if owner.components.talker then
+                        owner.components.talker:Say("This needle wasn't made for me, it's too difficult to use.")
+                    end
+                end
+            end)
+		end 
+	end
 	
 	inst:AddComponent("equippable")    
 	inst.components.equippable:SetOnEquip( OnEquip )    

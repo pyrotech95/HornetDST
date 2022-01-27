@@ -25,15 +25,20 @@ local function fn()
 	local trans = inst.entity:AddTransform()    
 	local anim = inst.entity:AddAnimState()    
 	local sound = inst.entity:AddSoundEmitter()
-    
-	MakeInventoryPhysics(inst)        
-	--anim:SetBank("hneedle3")    
-	--anim:SetBuild("hneedle3")    
-	--anim:PlayAnimation("idle")    
+    inst.entity:AddNetwork()
+	MakeInventoryPhysics(inst) 
+	
+	anim:SetBank("hneedle3")    
+	anim:SetBuild("hneedle3")    
+	anim:PlayAnimation("idle")    
+
+	if not TheWorld.ismastersim then
+		return inst
+	end
+	inst.entity:SetPristine()
 
 	inst:AddComponent("weapon")
-    inst.components.weapon:SetDamage(60)
-	inst.components.weapon.onattack = onattack
+    inst.components.weapon:SetDamage(65)
 
 	inst:AddComponent("inspectable")        
 	inst:AddComponent("inventoryitem")  
@@ -46,7 +51,6 @@ local function fn()
 			owner.AnimState:OverrideSymbol("swap_object", "swap_hneedle3", "swap_hneedle3")
 			owner.AnimState:Show("ARM_carry")
 			owner.AnimState:Hide("ARM_normal")
-			owner.components.talker:Say("Ready for what lies ahead.")
 		else
             inst:DoTaskInTime(0, function()
                 if owner and owner.components and owner.components.inventory then
@@ -62,5 +66,7 @@ local function fn()
 	inst:AddComponent("equippable")    
 	inst.components.equippable:SetOnEquip( OnEquip )    
 	inst.components.equippable:SetOnUnequip( OnUnequip )    
+	return inst
+end
 
-return instendreturn Prefab("common/inventory/hneedle3", fn, assets, prefabs)
+return Prefab("common/inventory/hneedle3", fn, assets, prefabs)
