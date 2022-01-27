@@ -12,7 +12,7 @@ return {
 	{
         APPRAISE =
         {
-            NOTNOW = "They appear to be busy.",
+            NOTNOW = "They appear preoccupied.",
         },
         REPAIR =
         {
@@ -106,8 +106,8 @@ return {
             DEAD = "This would be wasted on this one.",
             SLEEPING = "Too unconscious to care.",
             BUSY = "I'll try again in a second.",
-            ABIGAILHEART = "It was worth a shot.",
-            GHOSTHEART = "Perhaps this is a bad idea.",
+            ABIGAILHEART = "Fate appears to have other plans for you.",
+            GHOSTHEART = "A second chance is rare, use it well.",
             NOTGEM = "I'm not sticking that in there!",
             WRONGGEM = "This gem won't work here.",
             NOTSTAFF = "It's not quite the right shape.",
@@ -431,7 +431,7 @@ return {
         "Is this... messing up my hair?",
         "Hngh...!",
         "Pant... Pant...",
-        "This is the worst... experiment...",
+        "It's tough to move like this.",
     },
     ANNOUNCE_ATRIUM_DESTABILIZING =
     {
@@ -456,7 +456,7 @@ return {
 	ANNOUNCE_INV_FULL = "I can't carry any more stuff!",
 	ANNOUNCE_KNOCKEDOUT = "Ugh, my head!",
 	ANNOUNCE_LOWRESEARCH = "I didn't learn very much from that.",
-	ANNOUNCE_MOSQUITOS = "Perhaps a relative of my homeland's vengeflies?",
+	ANNOUNCE_MOSQUITOS = "Perhaps a relative of my homeland's vengeflies?", --rewrite later
     ANNOUNCE_NOWARDROBEONFIRE = "If it weren't on fire perhaps...",
     ANNOUNCE_NODANGERGIFT = "I can't let my focus slip now.",
     ANNOUNCE_NOMOUNTEDGIFT = "I should get off my beefalo first.",
@@ -967,12 +967,12 @@ return {
         },
         WORMWOOD =
         {
-            GENERIC = "Greetings, %s!",
+            GENERIC = "Another creature of the greenpath perhaps? Though not one I've seen before...",
             ATTACKER = "%s seems pricklier than usual today.",
             MURDERER = "Prepare to get weed whacked, %s!",
             REVIVER = "%s never gives up on his friends.",
             GHOST = "You need some help, lil guy?",
-            FIRESTARTER = "So you've decided on fire as your answer, %s.",
+            FIRESTARTER = "Is playing with fire wise for a beast of leaves?",
         },
         WARLY =
         {
@@ -990,7 +990,7 @@ return {
             ATTACKER = "I sense the beast within you rising...",
             MURDERER = "Just another of this land's many beasts, your fate is no different to theirs.",
             REVIVER = "Why thank you, %s!",
-            GHOST = "%s is looking greener around the gills than usual.",
+            GHOST = "One less beast in the world, though this one was different than most.",
             FIRESTARTER = "So you've decided on fire as your answer, %s.",
         },
 
@@ -1000,7 +1000,7 @@ return {
             ATTACKER = "There is a darkness to this child I did not forsee.",
             MURDERER = "This child is dangerous, I can't allow him to continue.",
             REVIVER = "Child, I am grateful for the second chance.",
-            GHOST = "So young... Caan I change his fate?",
+            GHOST = "So young... Can I change his fate?",
             FIRESTARTER = "Fire is dangerous child, be careful using it.",
         },
 
@@ -2753,7 +2753,7 @@ return {
             BURNING = "That's burning fast!",
 			BURNT = "It's out of style now.",
 		},
-		WARG = "You might be something to reckon with, big dog.",
+		WARG = "A terrible beast, I will remove you from this plane.",
 		WASPHIVE = "I think those bees are mad.",
 		WATERBALLOON = "What a scientific marvel!",
 		WATERMELON = "Sticky sweet.",
