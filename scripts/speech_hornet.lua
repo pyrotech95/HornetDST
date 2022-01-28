@@ -859,7 +859,7 @@ return {
             GHOST = "Don't look at me like that, %s! I'm working on it!",
             FIRESTARTER = "So you've decided on fire as your answer, %s.",
         },
-        WX78 =
+        WX78 = --unstarted
         {
             GENERIC = "Good day to you, %s!",
             ATTACKER = "I think we need to tweak your primary directive, %s...",
@@ -868,7 +868,7 @@ return {
             GHOST = "I always thought %s could use a heart. Now I'm certain!",
             FIRESTARTER = "So you've decided on fire as your answer, %s.",
         },
-        WILLOW =
+        WILLOW = --barely started
         {
             GENERIC = "Good day to you, %s!",
             ATTACKER = "%s is holding that lighter pretty tightly...",
@@ -877,7 +877,7 @@ return {
             GHOST = "I bet you're just burning for a heart, %s.",
             FIRESTARTER = "Again the flames surround you.",
         },
-        WENDY =
+        WENDY = --unstarted
         {
             GENERIC = "Greetings, %s!",
             ATTACKER = "%s doesn't have any sharp objects, does she?",
@@ -901,7 +901,7 @@ return {
             GOOSEGHOST = "He fell as the beast he became, a shadow of his former self.",
             FIRESTARTER = "So you've decided on fire as your answer, %s.",
         },
-        WICKERBOTTOM =
+        WICKERBOTTOM = --unstarted
         {
             GENERIC = "Good day, %s!",
             ATTACKER = "I think %s's planning to throw the book at me.",
@@ -910,20 +910,20 @@ return {
             GHOST = "This doesn't seem very scientific, does it, %s?",
             FIRESTARTER = "So you've decided on fire as your answer, %s.",
         },
-        WES = --started, not finished
+        WES = --Mostly finished, quite harsh
         {
             GENERIC = "I doubt this one will last long.",
             ATTACKER = "One such as you will not suvive such aggression.",
             MURDERER = "Have I underestimated you %s? I shall end you now.",
-            REVIVER = "%s thinks outside the invisible box.", --this one's tough
+            REVIVER = "Though you may have changed my fate, I fear yours is inevitable.", --this one's tough
             GHOST = 
 			{ 
 			 "Fate is cruel to the weaker among us...",
 			 "I feel no sadness in this weakling's demise",
 			} --I think I may dislike wes too much...
-            FIRESTARTER = "So you've decided on fire as your answer, %s.", --tbd
+            FIRESTARTER = "That fire seems real %s.", --maybe
         },
-        WEBBER =
+        WEBBER = --unstarted
         {
             GENERIC = "Good day, %s!",
             ATTACKER = "I'm gonna roll up a papyrus newspaper, just in case.",
@@ -932,8 +932,8 @@ return {
             GHOST = "%s is really buggin' me for a heart.",
             FIRESTARTER = "So you've decided on fire as your answer, %s.",
         },
-        WATHGRITHR =
-        {
+        WATHGRITHR = --unstarted
+        { 
             GENERIC = "Good day, %s!",
             ATTACKER = "I'd like to avoid a punch from %s, if possible.",
             MURDERER = "%s's gone berserk!",
@@ -941,7 +941,7 @@ return {
             GHOST = "Nice try. You're not escaping to Valhalla yet, %s.",
             FIRESTARTER = "So you've decided on fire as your answer, %s.",
         },
-        WINONA =
+        WINONA = --unstarted
         {
             GENERIC = "Good day to you, %s!",
             ATTACKER = "%s is a safety hazard.",
@@ -950,7 +950,7 @@ return {
             GHOST = "Looks like someone threw a wrench into your plans.",
             FIRESTARTER = "So you've decided on fire as your answer, %s.",
         },
-        WORTOX =
+        WORTOX = --unstarted
         {
             GENERIC = "Greetings to you, %s!",
             ATTACKER = "I knew %s couldn't be trusted!",
@@ -959,7 +959,7 @@ return {
             GHOST = "I reject the reality of ghosts and imps.",
             FIRESTARTER = "So you've decided on fire as your answer, %s.",
         },
-        WORMWOOD =
+        WORMWOOD = --barely started
         {
             GENERIC = "Another creature of the greenpath perhaps? Though not one I've seen before...",
             ATTACKER = "%s seems pricklier than usual today.",
@@ -968,7 +968,7 @@ return {
             GHOST = "You need some help, lil guy?",
             FIRESTARTER = "Is playing with fire wise for a beast of leaves?",
         },
-        WARLY =
+        WARLY = --unstarted
         {
             GENERIC = "Greetings, %s!",
             ATTACKER = "Well, this is a recipe for disaster.",
@@ -998,7 +998,7 @@ return {
             FIRESTARTER = "Fire is dangerous child, be careful using it.",
         },
 
-        WANDA =
+        WANDA = --barely started
         {
             GENERIC = "Good day, %s!",
             ATTACKER = "This really isn't the time or place for that, %s!",
