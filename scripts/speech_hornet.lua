@@ -524,8 +524,8 @@ return {
 	ANNOUNCE_WINTERS_FEAST_BUFF_OVER = "The holiday goes by so fast...",
 
     --lavaarena event
-    ANNOUNCE_REVIVING_CORPSE = "I will assist you.",
-    ANNOUNCE_REVIVED_OTHER_CORPSE = "Good as new!",
+    ANNOUNCE_REVIVING_CORPSE = "I'll provide aid as I'm able.",
+    ANNOUNCE_REVIVED_OTHER_CORPSE = "Join the fight once more.",
     ANNOUNCE_REVIVED_FROM_CORPSE = "You have given me another chance.",
 
     ANNOUNCE_FLARE_SEEN = "I wonder who set that flare?",
@@ -714,7 +714,7 @@ return {
         "My knowledge about this plant is growing!",
     },
 
-    ANNOUNCE_PLANT_RANDOMSEED = "I wonder what it will grow into.",
+    ANNOUNCE_PLANT_RANDOMSEED = "Such potential, I wonder what it will become.",
 
     ANNOUNCE_FERTILIZER_RESEARCHED = "I never thought I'd be applying my scientific mind to... this.",
 
@@ -765,8 +765,8 @@ return {
 	DESCRIBE =
 	{
 		MULTIPLAYER_PORTAL = "The door that brought me to this forsaken land.",
-        MULTIPLAYER_PORTAL_MOONROCK = "I'm sure there's some scientific explanation for this.",
-        MOONROCKIDOL = "I only worship science.",
+        MULTIPLAYER_PORTAL_MOONROCK = "The door that brought me to this forsaken land, though it has been altered.",
+        MOONROCKIDOL = "I will not worship this false idol.",
         CONSTRUCTION_PLANS = "Stuff for science!",
 
         ANTLION =
