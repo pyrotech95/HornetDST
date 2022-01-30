@@ -73,11 +73,11 @@ STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.HORNET =
 --Wes
 STRINGS.CHARACTERS.WES.DESCRIBE.HORNET = 
 {
-	GENERIC = "That mask's kind of creepy.",
-	ATTACKER = "Test String Attack.",
-	MURDERER = "Test String murder.",
-	REVIVER = "Test String revive.",
-	GHOST = "A lost soul.",
+	GENERIC = "...",
+	ATTACKER = "...",
+	MURDERER = "...",
+	REVIVER = "...",
+	GHOST = "...",
 }
 --Webber
 STRINGS.CHARACTERS.WEBBER.DESCRIBE.HORNET = 
