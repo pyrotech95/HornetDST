@@ -129,6 +129,7 @@ if HollowKnightPresent then
 		MURDERER = "I will not stand idle little ghost. Your actions must be stopped.",
 		REVIVER = "Once again you give me hope little ghost.",
 		GHOST = "You were born of the abyss. Now it seems you have returned to it.",
+		--FIRESTARTER = "Get that fire started %s.",
 	}
 	STRINGS.CHARACTERS.HOLLOWKNIGHT.DESCRIBE.HORNET = 
 	{
@@ -137,6 +138,7 @@ if HollowKnightPresent then
 		MURDERER = "...",
 		REVIVER = "...",
 		GHOST = "...",
+		FIRESTARTER = "...",
 	}
 end
 
