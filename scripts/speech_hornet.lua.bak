@@ -766,7 +766,7 @@ return {
 	{
 		MULTIPLAYER_PORTAL = "The door that brought me to this forsaken land.",
         MULTIPLAYER_PORTAL_MOONROCK = "The door that brought me to this forsaken land, though it has been altered.",
-        MOONROCKIDOL = "I only worship science.",
+        MOONROCKIDOL = "I will not worship this false idol.",
         CONSTRUCTION_PLANS = "Stuff for science!",
 
         ANTLION =
