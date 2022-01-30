@@ -27,61 +27,70 @@ server_filter_tags = {
 --configuration_options =
 --{
 	--{
-		--name = "Health",
-		--label = "Options for altering the balance of armours",
-		--options =	{
-		--{description = "much more", data = "Rebalanced"},
-		--{description = "more", data = "Rebalanced"},
-		--{description = "Default", data = "Traditional"},
-		--{description = "less", data = "Rebalanced"},
-		--{description = "much less", data = "Rebalanced"},
-		--}
+		--name = "HORNET_HEALTH",
+		--label = "Hornet's health stat",
+		--options = {
+		--{description = "Masochism(50)", data = 50},
+		--{description = "much less (70)", data = 70},
+		--{description = "less (80)", data = 80},
+		--{description = "Default (100)", data = 100},
+		--{description = "more (120)", data = 120},
+		--{description = "much more (150)", data = 150},
+		--},
 		--default = 100,
 	--},
 	--{
-		--name = "Sanity",
-		--label = "Options for altering the balance of armours",
+		--name = "HORNET_SANITY",
+		--label = "Hornet's sanity stat",
+		--options =	{
+		--{description = "much more (200)", data = 200},
+		--{description = "more (180)", data = 180},
+		--{description = "Default (150)", data = 150},
+		--{description = "less (120)", data = 120},
+		--{description = "much less (100)", data = 100},
+		--{description = "Masochism(80)", data = 80},
+		--},
+		--Default = 150,
+	--},
+	--{
+		--name = "HORNET_HUNGER",
+		--label = "Hornet's hunger stat",
+		--options =	{
+		--{description = "much more (200)", data = 200},
+		--{description = "more (180)", data = 180},
+		--{description = "Default (150)", data = 150},
+		--{description = "less (120)", data = 120},
+		--{description = "much less (100)", data = 100},
+		--{description = "Masochism(80)", data = 80},
+		--},
+		--Default = 150,
+	--},
+	--{
+		--name = "HORNET_MOVESPEED",
+		--label = "How fast hornet moves",
 		--options =	{
 		--{description = "Traditional", data = "Traditional"},
 		--{description = "Rebalanced", data = "Rebalanced"},
 		--}
-		--Default = 150
+		--Default = 1,
 	--},
 	--{
-		--name = "Stomach",
-		--label = "Options for altering the balance of armours",
-		--options =	{
-		--{description = "Traditional", data = "Traditional"},
-		--{description = "Rebalanced", data = "Rebalanced"},
-		--}
-		--Default = 150
-	--},
-	--{
-		--name = "Movespeed",
-		--label = "Options for altering the balance of armours",
-		--options =	{
-		--{description = "Traditional", data = "Traditional"},
-		--{description = "Rebalanced", data = "Rebalanced"},
-		--}
-		--Default = "",
-	--},
-	--{
-		--name = "Hollow Knight Charm Intergration",
-		--label = "Options for Allowing hornet to use charms from the Hollow Knight mod.",
+		--name = "HORNET_CHARM",
+		--label = "Options for Allowing hornet to use charms from the Hollow Knight mod (If present).",
 		--options =	{
 		--{description = "Enabled, crafting enabled", data = "crenabled"},
 		--{description = "Enabled, crafting disabled", data = "enabled"},
 		--{description = "Disabled", data = "disabled"},
-		--}
+		--},
 		--Default = "enabled",
 	--},
 	--{
-		--name = "Use custom font",
-		--label = "Options for Allowing hornet to use charms from the Hollow Knight mod.",
+		--name = "HORNET_FONT",
+		--label = "Option for enabling or disabling Hornet's custom font.",
 		--options =	{
 		--{description = "Enabled", data = "enabled"},
 		--{description = "Disabled", data = "disabled"},
-		--}
+		--},
 		--Default = "enabled",
 	--},
 --}

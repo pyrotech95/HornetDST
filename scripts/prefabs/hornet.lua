@@ -8,6 +8,7 @@ local assets = {
 TUNING.HORNET_HEALTH = 100
 TUNING.HORNET_HUNGER = 150
 TUNING.HORNET_SANITY = 150
+--TUNING.HORNET_HEALTH = GetModConfigData("HORNET_HEALTH")
 
 -- Custom starting inventory
 TUNING.GAMEMODE_STARTING_ITEMS.DEFAULT.HORNET = {
@@ -25,6 +26,7 @@ local start_inv = {
 for k, v in pairs(TUNING.GAMEMODE_STARTING_ITEMS) do
     start_inv[string.lower(k)] = v.HORNET
 end
+
 local prefabs = FlattenTree(start_inv, true)
 
 -- When the character is revived from human

@@ -8,6 +8,7 @@ local assets = {
 TUNING.HORNET_HEALTH = 100
 TUNING.HORNET_HUNGER = 150
 TUNING.HORNET_SANITY = 150
+--TUNING.HORNET_HEALTH = GetModConfigData("HORNET_HEALTH")
 
 -- Custom starting inventory
 TUNING.GAMEMODE_STARTING_ITEMS.DEFAULT.HORNET = {
@@ -15,7 +16,7 @@ TUNING.GAMEMODE_STARTING_ITEMS.DEFAULT.HORNET = {
 	"flint",
 	"twigs",
 	"twigs",
-	--"hneedle1",
+	"hneedle1",
 }
 
 local start_inv = {
