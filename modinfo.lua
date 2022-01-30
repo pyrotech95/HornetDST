@@ -24,47 +24,47 @@ server_filter_tags = {
 "character",
 }
 
---configuration_options =
---{
-	--{
-		--name = "HORNET_HEALTH",
-		--label = "Hornet's health stat",
-		--options = {
-		--{description = "Masochism(50)", data = 50},
-		--{description = "much less (70)", data = 70},
-		--{description = "less (80)", data = 80},
-		--{description = "Default (100)", data = 100},
-		--{description = "more (120)", data = 120},
-		--{description = "much more (150)", data = 150},
-		--},
-		--default = 100,
-	--},
-	--{
-		--name = "HORNET_SANITY",
-		--label = "Hornet's sanity stat",
-		--options =	{
-		--{description = "much more (200)", data = 200},
-		--{description = "more (180)", data = 180},
-		--{description = "Default (150)", data = 150},
-		--{description = "less (120)", data = 120},
-		--{description = "much less (100)", data = 100},
-		--{description = "Masochism(80)", data = 80},
-		--},
-		--Default = 150,
-	--},
-	--{
-		--name = "HORNET_HUNGER",
-		--label = "Hornet's hunger stat",
-		--options =	{
-		--{description = "much more (200)", data = 200},
-		--{description = "more (180)", data = 180},
-		--{description = "Default (150)", data = 150},
-		--{description = "less (120)", data = 120},
-		--{description = "much less (100)", data = 100},
-		--{description = "Masochism(80)", data = 80},
-		--},
-		--Default = 150,
-	--},
+configuration_options =
+{
+	{
+		name = "HORNET_HEALTH",
+		label = "Hornet's health stat",
+		options = {
+		{description = "Masochism(50)", data = 50},
+		{description = "much less (70)", data = 70},
+		{description = "less (80)", data = 80},
+		{description = "Default (100)", data = 100},
+		{description = "more (120)", data = 120},
+		{description = "much more (150)", data = 150},
+		},
+		default = 100,
+	},
+	{
+		name = "HORNET_SANITY",
+		label = "Hornet's sanity stat",
+		options = {
+		{description = "Masochism(80)", data = 80},
+		{description = "much less (100)", data = 100},
+		{description = "less (120)", data = 120},
+		{description = "Default (150)", data = 150},
+		{description = "more (180)", data = 180},
+		{description = "much more (200)", data = 200},
+		},
+		default = 150,
+	},
+	{
+		name = "HORNET_HUNGER",
+		label = "Hornet's hunger stat",
+		options = {
+		{description = "Masochism(80)", data = 80},
+		{description = "much less (100)", data = 100},
+		{description = "less (120)", data = 120},
+		{description = "Default (150)", data = 150},
+		{description = "more (180)", data = 180},
+		{description = "much more (200)", data = 200},
+		},
+		default = 150,
+	},
 	--{
 		--name = "HORNET_MOVESPEED",
 		--label = "How fast hornet moves",
@@ -72,7 +72,7 @@ server_filter_tags = {
 		--{description = "Traditional", data = "Traditional"},
 		--{description = "Rebalanced", data = "Rebalanced"},
 		--}
-		--Default = 1,
+		--default = 1,
 	--},
 	--{
 		--name = "HORNET_CHARM",
@@ -82,7 +82,7 @@ server_filter_tags = {
 		--{description = "Enabled, crafting disabled", data = "enabled"},
 		--{description = "Disabled", data = "disabled"},
 		--},
-		--Default = "enabled",
+		--default = "enabled",
 	--},
 	--{
 		--name = "HORNET_FONT",
@@ -91,6 +91,6 @@ server_filter_tags = {
 		--{description = "Enabled", data = "enabled"},
 		--{description = "Disabled", data = "disabled"},
 		--},
-		--Default = "enabled",
+		--default = "enabled",
 	--},
---}
+}

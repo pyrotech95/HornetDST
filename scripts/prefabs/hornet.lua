@@ -4,11 +4,10 @@ local assets = {
     Asset("SCRIPT", "scripts/prefabs/player_common.lua"),
 }
 
--- Your character's stats
-TUNING.HORNET_HEALTH = 100
-TUNING.HORNET_HUNGER = 150
-TUNING.HORNET_SANITY = 150
---TUNING.HORNET_HEALTH = GetModConfigData("HORNET_HEALTH")
+--Hornet's stats. Static method incase I break something in the config
+--TUNING.HORNET_HEALTH = 100
+--TUNING.HORNET_HUNGER = 150
+--TUNING.HORNET_SANITY = 150
 
 -- Custom starting inventory
 TUNING.GAMEMODE_STARTING_ITEMS.DEFAULT.HORNET = {

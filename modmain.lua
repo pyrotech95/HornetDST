@@ -187,3 +187,7 @@ local TECH = GLOBAL.TECH
 Recipe("hneedle1", {Ingredient("flint", 1), Ingredient("marble", 1), Ingredient("silk", 4)}, RECIPETABS.WAR, TECH.SCIENCE_ONE, nil, nil, nil, nil, "ishornet", "images/inventoryimages/hneedle1.xml", "hneedle1.tex")
 Recipe("hneedle2", {Ingredient("flint", 1), Ingredient("marble", 2), Ingredient("silk", 6)}, RECIPETABS.WAR, TECH.SCIENCE_TWO, nil, nil, nil, nil, "ishornet", "images/inventoryimages/hneedle2.xml", "hneedle2.tex")
 Recipe("hneedle3", {Ingredient("flint", 1), Ingredient("marble", 3), Ingredient("silk", 8)}, RECIPETABS.WAR, TECH.MAGIC_THREE, nil, nil, nil, nil, "ishornet", "images/inventoryimages/hneedle2.xml", "hneedle2.tex")
+
+TUNING.HORNET_HEALTH = GetModConfigData("HORNET_HEALTH")
+TUNING.HORNET_SANITY = GetModConfigData("HORNET_SANITY")
+TUNING.HORNET_HUNGER = GetModConfigData("HORNET_HUNGER")
