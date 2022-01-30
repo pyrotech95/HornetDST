@@ -1,12 +1,3 @@
---[[
-	--- This is Wilson's speech file for Don't Starve Together ---
-	Write your character's lines here.
-	If you want to use another speech file as a base, or use a more up-to-date version, get them from data\databundles\scripts.zip\scripts\
-	
-	If you want to use quotation marks in a quote, put a \ before it.
-	Example:
-	"Like \"this\"."
-]]
 return {
 	ACTIONFAIL =
 	{
@@ -104,7 +95,7 @@ return {
         {
             GENERIC = "That doesn't belong there.",
             DEAD = "This would be wasted on this one.",
-            SLEEPING = "Too unconscious to care.",
+            SLEEPING = "Perhaps when they wake.",
             BUSY = "I'll try again in a second.",
             ABIGAILHEART = "Fate appears to have other plans for you.",
             GHOSTHEART = "A second chance is rare, use it well.",
@@ -122,7 +113,7 @@ return {
             NOTATRIUMKEY = "It's not quite the right shape.",
             CANTSHADOWREVIVE = "It won't resurrect.",
             WRONGSHADOWFORM = "It's not put together right.",
-            NOMOON = "I need to see the moon for that to work.",
+            NOMOON = "This will only work in moonlight.",
 			PIGKINGGAME_MESSY = "I need to clean up first.",
 			PIGKINGGAME_DANGER = "It's too dangerous for that right now.",
 			PIGKINGGAME_TOOLATE = "It's too late for that now.",
@@ -369,21 +360,20 @@ return {
         WIMPY = "only_used_by_wolfang",
     },
 
-	ANNOUNCE_BEES = "BEEEEEEEEEEEEES!!!!",
-	ANNOUNCE_BOOMERANG = "Ow! I should try to catch that!",
-	ANNOUNCE_CHARLIE = "That presence... it's familiar! Hello?",
-	ANNOUNCE_CHARLIE_ATTACK = "OW! Something bit me!",
+	ANNOUNCE_BEES = "Small creatures with vicious stings.",
+	ANNOUNCE_BOOMERANG = "My timing was off.",
+	ANNOUNCE_CHARLIE = "The shadows come for me.",
+	ANNOUNCE_CHARLIE_ATTACK = "Vicious shade.",
 	ANNOUNCE_CHARLIE_MISSED = "only_used_by_winona", --winona specific
 	ANNOUNCE_COLD = "So cold!",
 	ANNOUNCE_HOT = "Need... ice... or... shade!",
 	ANNOUNCE_CRAFTING_FAIL = "I'm missing a couple key ingredients.",
-	ANNOUNCE_DEERCLOPS = "That sounded big!",
-	ANNOUNCE_CAVEIN = "The ceiling is destabilizing!",
+	ANNOUNCE_DEERCLOPS = "I sense my next challenge approaching. Will I have the strength to see it through?",
+	ANNOUNCE_CAVEIN = "What beast could cause that?",
 	ANNOUNCE_ANTLION_SINKHOLE =
 	{
-		"The ground is destabilizing!",
-		"A tremor!",
-		"Terrible terralogical waves!",
+		"What beast could cause that?",
+		"I should seek out the cause...",
 	},
 	ANNOUNCE_ANTLION_TRIBUTE =
 	{
@@ -401,12 +391,12 @@ return {
 
 	ANNOUNCE_EAT =
 	{
-		GENERIC = "Yum!",
-		PAINFUL = "I don't feel so good.",
-		SPOILED = "Yuck! That was terrible!",
-		STALE = "I think that was starting to turn.",
-		INVALID = "I can't eat that!",
-        YUCKY = "Putting that in my mouth would be disgusting!",
+		GENERIC = "Sustenance.",
+		PAINFUL = "This may have done more harm than good.",
+		SPOILED = "Edible, barely.", --revisit
+		STALE = "Beyond it's best, but it will sustain me.",
+		INVALID = "That doesn't seem edible.",
+        YUCKY = "I am not so far gone as to eat that.",
 
         --Warly specific ANNOUNCE_EAT strings
 		COOKED = "only_used_by_warly",
@@ -534,8 +524,8 @@ return {
 	ANNOUNCE_WINTERS_FEAST_BUFF_OVER = "The holiday goes by so fast...",
 
     --lavaarena event
-    ANNOUNCE_REVIVING_CORPSE = "I will assist you.",
-    ANNOUNCE_REVIVED_OTHER_CORPSE = "Good as new!",
+    ANNOUNCE_REVIVING_CORPSE = "I'll provide aid as I'm able.",
+    ANNOUNCE_REVIVED_OTHER_CORPSE = "Join the fight once more.",
     ANNOUNCE_REVIVED_FROM_CORPSE = "You have given me another chance.",
 
     ANNOUNCE_FLARE_SEEN = "I wonder who set that flare?",
@@ -724,7 +714,7 @@ return {
         "My knowledge about this plant is growing!",
     },
 
-    ANNOUNCE_PLANT_RANDOMSEED = "I wonder what it will grow into.",
+    ANNOUNCE_PLANT_RANDOMSEED = "Such potential, I wonder what it will become.",
 
     ANNOUNCE_FERTILIZER_RESEARCHED = "I never thought I'd be applying my scientific mind to... this.",
 
@@ -775,8 +765,8 @@ return {
 	DESCRIBE =
 	{
 		MULTIPLAYER_PORTAL = "The door that brought me to this forsaken land.",
-        MULTIPLAYER_PORTAL_MOONROCK = "I'm sure there's some scientific explanation for this.",
-        MOONROCKIDOL = "I only worship science.",
+        MULTIPLAYER_PORTAL_MOONROCK = "The door that brought me to this forsaken land, though it has been altered.",
+        MOONROCKIDOL = "I will not worship this false idol.",
         CONSTRUCTION_PLANS = "Stuff for science!",
 
         ANTLION =
@@ -833,7 +823,7 @@ return {
         BOOK_SLEEP = "Strange, it's just 500 pages of telegraph codes.",
         BOOK_BRIMSTONE = "The beginning was dull, but got better near the end.",
 
-        PLAYER =
+        PLAYER = --finished, could use work
         {
             GENERIC = "A fated meeting, %s.",
             ATTACKER = "%s, would you slay another?",
@@ -842,7 +832,7 @@ return {
             GHOST = "%s, only pity for your cursed kind.",
             FIRESTARTER = "So you've decided on fire as your answer, %s.",
         },
-        WILSON =
+        WILSON = --finished, could use work
         {
             GENERIC = "Will you survive this ordeal scientist?",
             ATTACKER = "%s, would you slay another?",
@@ -851,7 +841,7 @@ return {
             GHOST = "%s, only pity for your cursed kind.",
             FIRESTARTER = "So you've decided on fire as your answer, scientist.",
         },
-        WOLFGANG =
+        WOLFGANG = --almost finished, could use work
         {
             GENERIC = "...So strong...",
             ATTACKER = "You're strong, but should I fear you?",
@@ -860,7 +850,7 @@ return {
             GHOST = "%s, even your strength couldn't endure this land.",
             FIRESTARTER = "So you've decided on fire as your answer, %s.",
         },
-        WAXWELL =
+        WAXWELL = --partially finished
         {
             GENERIC = "This one is loved by the shadows.",
             ATTACKER = "Seems you've gone from \"dapper\" to \"slapper\".",
@@ -869,7 +859,7 @@ return {
             GHOST = "Don't look at me like that, %s! I'm working on it!",
             FIRESTARTER = "So you've decided on fire as your answer, %s.",
         },
-        WX78 =
+        WX78 = --unstarted
         {
             GENERIC = "Good day to you, %s!",
             ATTACKER = "I think we need to tweak your primary directive, %s...",
@@ -878,7 +868,7 @@ return {
             GHOST = "I always thought %s could use a heart. Now I'm certain!",
             FIRESTARTER = "So you've decided on fire as your answer, %s.",
         },
-        WILLOW =
+        WILLOW = --barely started
         {
             GENERIC = "Good day to you, %s!",
             ATTACKER = "%s is holding that lighter pretty tightly...",
@@ -887,7 +877,7 @@ return {
             GHOST = "I bet you're just burning for a heart, %s.",
             FIRESTARTER = "Again the flames surround you.",
         },
-        WENDY =
+        WENDY = --unstarted
         {
             GENERIC = "Greetings, %s!",
             ATTACKER = "%s doesn't have any sharp objects, does she?",
@@ -896,7 +886,7 @@ return {
             GHOST = "I'm seeing double! I'd better concoct a heart for %s.",
             FIRESTARTER = "So you've decided on fire as your answer, %s.",
         },
-        WOODIE =
+        WOODIE = --half done, but not complete
         {
             GENERIC = "Greetings, %s!",
             ATTACKER = "%s has been a bit of a sap lately...",
@@ -911,7 +901,7 @@ return {
             GOOSEGHOST = "He fell as the beast he became, a shadow of his former self.",
             FIRESTARTER = "So you've decided on fire as your answer, %s.",
         },
-        WICKERBOTTOM =
+        WICKERBOTTOM = --unstarted
         {
             GENERIC = "Good day, %s!",
             ATTACKER = "I think %s's planning to throw the book at me.",
@@ -920,16 +910,20 @@ return {
             GHOST = "This doesn't seem very scientific, does it, %s?",
             FIRESTARTER = "So you've decided on fire as your answer, %s.",
         },
-        WES =
+        WES = --Mostly finished, quite harsh
         {
-            GENERIC = "Greetings, %s!",
-            ATTACKER = "%s is silent, but deadly...",
-            MURDERER = "Mime this!",
-            REVIVER = "%s thinks outside the invisible box.",
-            GHOST = "How do you say \"I'll get a revival device\" in mime?",
-            FIRESTARTER = "So you've decided on fire as your answer, %s.",
+            GENERIC = "I doubt this one will last long.",
+            ATTACKER = "One such as you will not suvive such aggression.",
+            MURDERER = "Have I underestimated you %s? I shall end you now.",
+            REVIVER = "Though you may have changed my fate, I fear yours is inevitable.", --this one's tough
+            GHOST = 
+			{ 
+			 "Fate is cruel to the weaker among us...",
+			 "I feel no sadness in this weakling's demise",
+			} --I think I may dislike wes too much...
+            FIRESTARTER = "That fire seems real %s.", --maybe
         },
-        WEBBER =
+        WEBBER = --unstarted
         {
             GENERIC = "Good day, %s!",
             ATTACKER = "I'm gonna roll up a papyrus newspaper, just in case.",
@@ -938,8 +932,8 @@ return {
             GHOST = "%s is really buggin' me for a heart.",
             FIRESTARTER = "So you've decided on fire as your answer, %s.",
         },
-        WATHGRITHR =
-        {
+        WATHGRITHR = --unstarted
+        { 
             GENERIC = "Good day, %s!",
             ATTACKER = "I'd like to avoid a punch from %s, if possible.",
             MURDERER = "%s's gone berserk!",
@@ -947,7 +941,7 @@ return {
             GHOST = "Nice try. You're not escaping to Valhalla yet, %s.",
             FIRESTARTER = "So you've decided on fire as your answer, %s.",
         },
-        WINONA =
+        WINONA = --unstarted
         {
             GENERIC = "Good day to you, %s!",
             ATTACKER = "%s is a safety hazard.",
@@ -956,7 +950,7 @@ return {
             GHOST = "Looks like someone threw a wrench into your plans.",
             FIRESTARTER = "So you've decided on fire as your answer, %s.",
         },
-        WORTOX =
+        WORTOX = --unstarted
         {
             GENERIC = "Greetings to you, %s!",
             ATTACKER = "I knew %s couldn't be trusted!",
@@ -965,7 +959,7 @@ return {
             GHOST = "I reject the reality of ghosts and imps.",
             FIRESTARTER = "So you've decided on fire as your answer, %s.",
         },
-        WORMWOOD =
+        WORMWOOD = --barely started
         {
             GENERIC = "Another creature of the greenpath perhaps? Though not one I've seen before...",
             ATTACKER = "%s seems pricklier than usual today.",
@@ -974,7 +968,7 @@ return {
             GHOST = "You need some help, lil guy?",
             FIRESTARTER = "Is playing with fire wise for a beast of leaves?",
         },
-        WARLY =
+        WARLY = --unstarted
         {
             GENERIC = "Greetings, %s!",
             ATTACKER = "Well, this is a recipe for disaster.",
@@ -984,17 +978,17 @@ return {
             FIRESTARTER = "So you've decided on fire as your answer, %s.",
         },
 
-        WURT =
+        WURT = --finished, could use work
         {
-            GENERIC = "Good day, %s!",
+            GENERIC = "A beast? No, this one seems like something more.",
             ATTACKER = "I sense the beast within you rising...",
             MURDERER = "Just another of this land's many beasts, your fate is no different to theirs.",
             REVIVER = "Why thank you, %s!",
             GHOST = "One less beast in the world, though this one was different than most.",
-            FIRESTARTER = "So you've decided on fire as your answer, %s.",
+            FIRESTARTER = "You have shown you can create flames, but should you %s?",
         },
 
-        WALTER =
+        WALTER = --finished
         {
             GENERIC = "Is this child strong enough for this harsh land?",
             ATTACKER = "There is a darkness to this child I did not forsee.",
@@ -1004,7 +998,7 @@ return {
             FIRESTARTER = "Fire is dangerous child, be careful using it.",
         },
 
-        WANDA =
+        WANDA = --barely started
         {
             GENERIC = "Good day, %s!",
             ATTACKER = "This really isn't the time or place for that, %s!",
