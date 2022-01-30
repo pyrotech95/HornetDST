@@ -920,7 +920,7 @@ return {
 			{ 
 			 "Fate is cruel to the weaker among us...",
 			 "I feel no sadness in this weakling's demise",
-			} --I think I may dislike wes too much...
+			}, --I think I may dislike wes too much...
             FIRESTARTER = "That fire seems real %s.", --maybe
         },
         WEBBER = --unstarted
