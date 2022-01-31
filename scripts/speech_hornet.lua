@@ -832,6 +832,15 @@ return {
             GHOST = "%s, only pity for your cursed kind.",
             FIRESTARTER = "So you've decided on fire as your answer, %s.",
         },
+		HOLLOWKNIGHT = --I DON'T KNOW IF THIS WORKS
+        {
+			GENERIC = "Again we meet little ghost.",
+			ATTACKER = "Come no closer, ghost.",
+			MURDERER = "I will not stand idle little ghost. Your actions must be stopped.",
+			REVIVER = "Once again you give me hope little ghost.",
+			GHOST = "You were born of the abyss. Now it seems you have returned to it.",
+			FIRESTARTER = "Get that fire started %s.",
+		},
         WILSON = --finished, could use work
         {
             GENERIC = "Will you survive this ordeal scientist?",
@@ -916,11 +925,11 @@ return {
             ATTACKER = "One such as you will not suvive such aggression.",
             MURDERER = "Have I underestimated you %s? I shall end you now.",
             REVIVER = "Though you may have changed my fate, I fear yours is inevitable.", --this one's tough
-            GHOST = 
-			{ 
-			 "Fate is cruel to the weaker among us...",
-			 "I feel no sadness in this weakling's demise",
-			}, --I think I may dislike wes too much...
+            GHOST = "I feel no sadness in this weakling's demise",
+			--{ 
+			 --"Fate is cruel to the weaker among us...",
+			 --"I feel no sadness in this weakling's demise",
+			--}, --I think I may dislike wes too much...
             FIRESTARTER = "That fire seems real %s.", --maybe
         },
         WEBBER = --unstarted

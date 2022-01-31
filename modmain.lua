@@ -124,29 +124,29 @@ STRINGS.CHARACTERS.WILLOW.DESCRIBE.HORNET = --Seems to work... probably?
 
 --Hollow knight mod examine text cross compat
 if HollowKnightPresent then
-	STRINGS.CHARACTERS.HORNET.DESCRIBE.HOLLOWKNIGHT =
+	STRINGS.CHARACTERS.HORNET.DESCRIBE.HOLLOWKNIGHT = --all this may not be required. The new speech file may do it already.
 	{
 		GENERIC = "Again we meet little ghost.",
 		ATTACKER = "Come no closer, ghost.",
 		MURDERER = "I will not stand idle little ghost. Your actions must be stopped.",
 		REVIVER = "Once again you give me hope little ghost.",
 		GHOST = "You were born of the abyss. Now it seems you have returned to it.",
-		--FIRESTARTER = "Get that fire started %s.",
-	}
-	STRINGS.CHARACTERS.HOLLOWKNIGHT.DESCRIBE.HORNET = 
-	{
-		GENERIC = "...",
-		ATTACKER = "...",
-		MURDERER = "...",
-		REVIVER = "...",
-		GHOST = "...",
-		FIRESTARTER = "...",
-	}
+		FIRESTARTER = "Get that fire started %s.",
+	},
+	--STRINGS.CHARACTERS.HOLLOWKNIGHT.DESCRIBE.HORNET = -- all this code doesn't work. Priority registering issue I think. Not sure. Will look in to.
+	--{
+		--GENERIC = "...",
+		--ATTACKER = "...",
+		--MURDERER = "...",
+		--REVIVER = "...",
+		--GHOST = "...",
+		--FIRESTARTER = "...",
+	--},
 	--if TUNING.HORNET_CHARM == "crenabled" or "enabled" then
-	--Maybe add the ability to use h knight charms? Would need to add the slot...
+		--Maybe add the ability to use h knight charms? Would need to add the slot...
 	--end
+	print("Hornet Got this far")
 end
-
 
 -- The character's name as appears in-game 
 STRINGS.NAMES.HORNET = "Hornet"
