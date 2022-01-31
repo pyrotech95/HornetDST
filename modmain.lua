@@ -120,6 +120,8 @@ STRINGS.CHARACTERS.WILLOW.DESCRIBE.HORNET = --Seems to work... probably?
 	FIRESTARTER = "Get that fire started %s.",
 }
 
+--TUNING.HORNET_CHARM = GetModConfigData("HORNET_CHARM")
+
 --Hollow knight mod examine text cross compat
 if HollowKnightPresent then
 	STRINGS.CHARACTERS.HORNET.DESCRIBE.HOLLOWKNIGHT =
@@ -140,6 +142,9 @@ if HollowKnightPresent then
 		GHOST = "...",
 		FIRESTARTER = "...",
 	}
+	--if TUNING.HORNET_CHARM == "crenabled" or "enabled" then
+	--Maybe add the ability to use h knight charms? Would need to add the slot...
+	--end
 end
 
 

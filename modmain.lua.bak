@@ -120,6 +120,8 @@ STRINGS.CHARACTERS.WILLOW.DESCRIBE.HORNET = --Seems to work... probably?
 	FIRESTARTER = "Get that fire started %s.",
 }
 
+--TUNING.HORNET_CHARM = GetModConfigData("HORNET_CHARM")
+
 --Hollow knight mod examine text cross compat
 if HollowKnightPresent then
 	STRINGS.CHARACTERS.HORNET.DESCRIBE.HOLLOWKNIGHT =
@@ -140,6 +142,8 @@ if HollowKnightPresent then
 		GHOST = "...",
 		FIRESTARTER = "...",
 	}
+	--if TUNING.HORNET_CHARM == "crenabled" or "enabled" then
+	--end
 end
 
 
@@ -190,4 +194,4 @@ Recipe("hneedle3", {Ingredient("flint", 1), Ingredient("marble", 3), Ingredient(
 
 TUNING.HORNET_HEALTH = GetModConfigData("HORNET_HEALTH")
 TUNING.HORNET_SANITY = GetModConfigData("HORNET_SANITY")
---TUNING.HORNET_HUNGER = GetModConfigData("HORNET_HUNGER")
+TUNING.HORNET_HUNGER = GetModConfigData("HORNET_HUNGER")
