@@ -54,6 +54,29 @@ local function onload(inst)
     end
 end
 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--Battle sanity mechanics
+local function onEndHornetComfort()
+
+end
+
+local function onApplyHornetComfort()
+
+end
+
+local function applyHornetComfortRange()
+
+end
+
+local function onHornetAttackEnemy()
+
+end
+
+local function onEnemyAttackHornet()
+
+end
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 -- This initializes for both the server and client. Tags can be added here.
 local common_postinit = function(inst) 
