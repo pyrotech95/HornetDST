@@ -8,6 +8,8 @@ local assets = {
 --TUNING.HORNET_HEALTH = 100
 --TUNING.HORNET_HUNGER = 150
 --TUNING.HORNET_SANITY = 150
+--TUNING.HORNET_MOVESPEED = 1.25
+--TUNING.HORNET_DAMAGEMULT = 1
 
 -- Custom starting inventory
 TUNING.GAMEMODE_STARTING_ITEMS.DEFAULT.HORNET = {
@@ -31,7 +33,7 @@ local prefabs = FlattenTree(start_inv, true)
 -- When the character is revived from human
 local function onbecamehuman(inst)
 	-- Set speed when not a ghost (optional)
-	inst.components.locomotor:SetExternalSpeedMultiplier(inst, "hornet_speed_mod", 1.25)
+	inst.components.locomotor:SetExternalSpeedMultiplier(inst, "hornet_speed_mod", TUNING.HORNET_MOVESPEED)
 end
 
 local function onbecameghost(inst)
@@ -79,7 +81,7 @@ local master_postinit = function(inst)
 	inst.components.sanity:SetMax(TUNING.HORNET_SANITY)
 	
 	-- Damage multiplier (optional)
-    inst.components.combat.damagemultiplier = 1
+    inst.components.combat.damagemultiplier = TUNING.HORNET_DAMAGEMULT
 	
 	-- Hunger rate (optional)
 	inst.components.hunger.hungerrate = 1 * TUNING.WILSON_HUNGER_RATE
