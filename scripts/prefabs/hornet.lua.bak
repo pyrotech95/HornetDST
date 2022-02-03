@@ -55,28 +55,79 @@ local function onload(inst)
 end
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
---Battle sanity mechanics
-local function onEndHornetComfort()
-
+--Battle sanity mechanics. All WIP
+local function onEndHornetComfort(receiver, comfortAuraUID, comforterGUID) -- Mostly done I think... Who knows.
+	-- In here I put the cancelling code
+	print("onEndHornetComfort has been activated... Debug info") -- Debugging stuff
+	if not receiver or not receiver:IsValid() then
+		return
+	end
+	
+	if receiver[comfortAuraUID] then
+		receiver[comfortAuraUID]:Cancel()
+		receiver[comfortAuraUID] = nil
+	end
 end
 
-local function onApplyHornetComfort()
+local function onApplyHornetComfort(receiver, comforter) -- This function seems done... (Warning, function almost certainly not done or functional)
+	print("onApplyHornetComfort has been activated... Debug info") -- Debugging stuff
+	
+	if not receiver or not receiver:IsValid() then
+		return
+	end -- This... This is self explanatory. Crash prevention
+	
+	local comforterGUID = comforter.GUID -- Just to make things pretty really
+	local comfortAuraUID = "hornetComfortAura"..comforterGUID -- Unique ID's baby
+	
+	if not receiver[comfortAuraUID] then
+		receiver[comfortAuraUID] = receiver:DoPeriodicTask(1.0, function(receiver) -- Number is the interval for aura effect application
+		if receiver.components.sanity then -- To ensure sanity exists on the character. Crash prevention...
+			receiver.components.sanity:DoDelta(1.0, true) -- Number is the sanity gain per interval. The true prevents the pulsing that food and one-off stuff does
+		end
+	end)
+	
+	local endComfortAuraUID = "mumenEntireAura"..comforterGUID
+	
+	-- Just a refresher for the timer. May want to do it differently, undecided. Either way, resets the timer before we set it.
+	if receiver[endComfortAuraUID] then
+		receiver[endComfortAuraUID]:Cancel()
+		receiver[endComfortAuraUID] = nil
+	end
+	
+	-- Ends the aura in 5 seconds, time will need adjusted
+	receiver[endComfortAuraUID] = receiver:DoTaskInTime(5.0, onEndHornetComfort, comforterGUID, comfortAuraUID)
+end 
 
+local function applyHornetComfortRange(inst) -- I think this is done
+	-- In here I have to figure out how big the range of the aura should be and apply it like that.
+	local x, y, z = inst.Transform:GetWorldPosition()
+	--The 20 is the closeness in units. Not sure what units...
+	local closePlayers = TheSim:FindEntities(x, y, z, 20, {"player"}, {"playerghost", "INLIMBO", "chero", "werepig"}, nil)
+	-- Check wigfrid for a better implimentation method
+	
+	for i, v in ipairs(closePlayers) do
+		--print(tostring(inst), " gave Comforting Aura to ", tostring(v))
+		onApplyHornetComfort(v, inst)
+	end
 end
 
-local function applyHornetComfortRange()
-
+local function onHornetAttackEnemy() -- Possibly done, somewhat unclear. May well crash
+	-- One of the two triggering conditions
+	print("onHornetAttackEnemy has been activated... Debug info") -- Debugging stuff
+	if not data.target or not data.target:IsValid() or data.target:HasTag("prey") or not data.target.components.combat then
+		return
+	end -- Various abuse prevention methods
+	applyHornetComfortRange(inst) --Calls the range check function, which will in turn call the applier
 end
 
-local function onHornetAttackEnemy()
-
+local function onEnemyAttackHornet() -- Definitely not done
+	-- Make sure to do a check that it's an enemy, not just any source of damage like the thorns charm in the Hollow Knight mod probably does... (Pretty sure that's the issue)
+	-- The other of the two triggering conditions... I wonder if I could make these a single function. Maybe "onHornetComfortTrigger"?
 end
 
-local function onEnemyAttack()
-
-end
-
+--The End of WIP
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 -- This initializes for both the server and client. Tags can be added here.
 local common_postinit = function(inst) 
