@@ -82,7 +82,7 @@ local function onApplyHornetComfort(receiver, comforter) -- This function seems 
 	if not receiver[comfortAuraUID] then
 		receiver[comfortAuraUID] = receiver:DoPeriodicTask(1.0, function(receiver) -- Number is the interval for aura effect application
 			if receiver.components.sanity then -- To ensure sanity exists on the character. Crash prevention...
-				receiver.components.sanity:DoDelta(1.0, true) -- Number is the sanity gain per interval. The true prevents the pulsing that food and one-off stuff does
+				receiver.components.sanity:DoDelta(3.0, true) -- Number is the sanity gain per interval. The true prevents the pulsing that food and one-off stuff does
 			end
 		end)
 	end
@@ -164,6 +164,7 @@ local master_postinit = function(inst)
 	
 	inst.OnLoad = onload
     inst.OnNewSpawn = onload
+	inst:ListenForEvent("onattackother", onAttackOther)
 	
 end
 
