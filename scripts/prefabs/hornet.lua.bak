@@ -85,8 +85,9 @@ local function onApplyHornetComfort(receiver, comforter) -- This function seems 
 			receiver.components.sanity:DoDelta(1.0, true) -- Number is the sanity gain per interval. The true prevents the pulsing that food and one-off stuff does
 		end
 	end)
+	end
 	
-	local endComfortAuraUID = "mumenEntireAura"..comforterGUID
+	local endComfortAuraUID = "hornetEntireAura"..comforterGUID
 	
 	-- Just a refresher for the timer. May want to do it differently, undecided. Either way, resets the timer before we set it.
 	if receiver[endComfortAuraUID] then
