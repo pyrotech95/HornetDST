@@ -165,6 +165,7 @@ local master_postinit = function(inst)
 	inst.OnLoad = onload
     inst.OnNewSpawn = onload
 	inst:ListenForEvent("onattackother", onAttackOther)
+	--inst:ListenForEvent("attacked", OnAttacked)
 end
 
 return MakePlayerCharacter("hornet", prefabs, assets, common_postinit, master_postinit, start_inv)

@@ -112,9 +112,9 @@ local function applyHornetComfortRange(inst) -- I think this is done
 	end
 end
 
-local function onHornetAttackEnemy() -- Possibly done, somewhat unclear. May well crash
+local function onAttackOther() -- Possibly done, somewhat unclear. May well crash
 	-- One of the two triggering conditions
-	print("onHornetAttackEnemy has been activated... Debug info") -- Debugging stuff
+	print("onAttackOther has been activated... Debug info") -- Debugging stuff
 	if not data.target or not data.target:IsValid() or data.target:HasTag("prey") or not data.target.components.combat then
 		return
 	end -- Various abuse prevention methods
@@ -165,7 +165,7 @@ local master_postinit = function(inst)
 	inst.OnLoad = onload
     inst.OnNewSpawn = onload
 	inst:ListenForEvent("onattackother", onAttackOther)
-	
+	--inst:ListenForEvent("attacked", OnAttacked)
 end
 
 return MakePlayerCharacter("hornet", prefabs, assets, common_postinit, master_postinit, start_inv)
