@@ -112,7 +112,7 @@ local function applyHornetComfortRange(inst) -- I think this is done
 	end
 end
 
-local function onAttackOther() -- Possibly done, somewhat unclear. May well crash
+local function onAttackOther(inst, data) -- Possibly done, somewhat unclear. May well crash
 	-- One of the two triggering conditions
 	print("onAttackOther has been activated... Debug info") -- Debugging stuff
 	if not data.target or not data.target:IsValid() or data.target:HasTag("prey") or not data.target.components.combat then
