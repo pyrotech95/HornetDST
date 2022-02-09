@@ -95,15 +95,15 @@ local function onApplyHornetComfort(receiver, comforter) -- This function seems 
 		receiver[endComfortAuraUID] = nil
 	end
 	
-	-- Ends the aura in 5 seconds, time will need adjusted
-	receiver[endComfortAuraUID] = receiver:DoTaskInTime(5.0, onEndHornetComfort, comforterGUID, comfortAuraUID)
+	-- Ends the aura in 10 seconds, time will need adjusted
+	receiver[endComfortAuraUID] = receiver:DoTaskInTime(10.0, onEndHornetComfort, comforterGUID, comfortAuraUID)
 end 
 
 local function applyHornetComfortRange(inst) -- I think this is done
 	-- In here I have to figure out how big the range of the aura should be and apply it like that.
 	local x, y, z = inst.Transform:GetWorldPosition()
 	--The 20 is the closeness in units. Not sure what units...
-	local closePlayers = TheSim:FindEntities(x, y, z, 20, {"player"}, {"playerghost", "INLIMBO", "chero", "werepig"}, nil)
+	local closePlayers = TheSim:FindEntities(x, y, z, 20, {"player"}, {"playerghost", "INLIMBO"}, nil)
 	-- Check wigfrid for a better implimentation method
 	
 	for i, v in ipairs(closePlayers) do
