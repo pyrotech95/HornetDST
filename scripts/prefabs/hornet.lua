@@ -60,6 +60,7 @@ local function onEndHornetComfort(receiver, comfortAuraUID, comforterGUID) -- Mo
 	-- In here I put the cancelling code
 	print("onEndHornetComfort has been activated... Debug info") -- Debugging stuff
 	if not receiver or not receiver:IsValid() then
+		print("We didn't end it this time...")
 		return
 	end
 	
@@ -69,7 +70,7 @@ local function onEndHornetComfort(receiver, comfortAuraUID, comforterGUID) -- Mo
 	end
 end
 
-local function onApplyHornetComfort(receiver, comforter) -- This function seems done... (Warning, function almost certainly not done or functional)
+local function onApplyHornetComfort(receiver, comforter) -- This function seems done... Currently doesn't end. (Warning, function almost certainly not done or functional)
 	print("onApplyHornetComfort has been activated... Debug info") -- Debugging stuff
 	
 	if not receiver or not receiver:IsValid() then
