@@ -60,6 +60,7 @@ local function onEndHornetComfort(receiver, comfortAuraUID, comforterGUID) -- Mo
 	-- In here I put the cancelling code
 	print("onEndHornetComfort has been activated... Debug info") -- Debugging stuff
 	if not receiver or not receiver:IsValid() then
+		print("We didn't end it this time...")
 		return
 	end
 	
@@ -69,7 +70,7 @@ local function onEndHornetComfort(receiver, comfortAuraUID, comforterGUID) -- Mo
 	end
 end
 
-local function onApplyHornetComfort(receiver, comforter) -- This function seems done... (Warning, function almost certainly not done or functional)
+local function onApplyHornetComfort(receiver, comforter) -- This function seems done... Currently doesn't end. (Warning, function almost certainly not done or functional)
 	print("onApplyHornetComfort has been activated... Debug info") -- Debugging stuff
 	
 	if not receiver or not receiver:IsValid() then
@@ -82,7 +83,8 @@ local function onApplyHornetComfort(receiver, comforter) -- This function seems 
 	if not receiver[comfortAuraUID] then
 		receiver[comfortAuraUID] = receiver:DoPeriodicTask(1.0, function(receiver) -- Number is the interval for aura effect application
 			if receiver.components.sanity then -- To ensure sanity exists on the character. Crash prevention...
-				receiver.components.sanity:DoDelta(3.0, true) -- Number is the sanity gain per interval. The true prevents the pulsing that food and one-off stuff does
+				receiver.components.sanity:DoDelta(5.0) -- Number is the sanity gain per interval. The true prevents the pulsing that food and one-off stuff does receiver.components.sanity:DoDelta(3.0, true)
+				print("1 happy boi - test string here. May have added 5 sanity.")
 			end
 		end)
 	end
@@ -95,15 +97,16 @@ local function onApplyHornetComfort(receiver, comforter) -- This function seems 
 		receiver[endComfortAuraUID] = nil
 	end
 	
-	-- Ends the aura in 5 seconds, time will need adjusted
-	receiver[endComfortAuraUID] = receiver:DoTaskInTime(5.0, onEndHornetComfort, comforterGUID, comfortAuraUID)
+	-- Ends the aura in 10 seconds, time will need adjusted
+	receiver[endComfortAuraUID] = receiver:DoTaskInTime(10.0, onEndHornetComfort, comforterGUID, comfortAuraUID)
+	--receiver[endComfortAuraUID] = receiver:DoTaskInTime(10.0, onEndHornetComfort, receiver, comforterGUID, comfortAuraUID)
 end 
 
 local function applyHornetComfortRange(inst) -- I think this is done
 	-- In here I have to figure out how big the range of the aura should be and apply it like that.
 	local x, y, z = inst.Transform:GetWorldPosition()
 	--The 20 is the closeness in units. Not sure what units...
-	local closePlayers = TheSim:FindEntities(x, y, z, 20, {"player"}, {"playerghost", "INLIMBO", "chero", "werepig"}, nil)
+	local closePlayers = TheSim:FindEntities(x, y, z, 20, {"player"}, {"playerghost", "INLIMBO"}, nil)
 	-- Check wigfrid for a better implimentation method
 	
 	for i, v in ipairs(closePlayers) do
@@ -112,7 +115,7 @@ local function applyHornetComfortRange(inst) -- I think this is done
 	end
 end
 
-local function onAttackOther(inst, data) -- Possibly done, somewhat unclear. May well crash
+local function onAttackOther(inst, data) -- Appears to work and trigger fine.
 	-- One of the two triggering conditions
 	print("onAttackOther has been activated... Debug info") -- Debugging stuff
 	if not data.target or not data.target:IsValid() or data.target:HasTag("prey") or not data.target.components.combat then
