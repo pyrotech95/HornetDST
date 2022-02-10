@@ -84,7 +84,7 @@ local function onApplyHornetComfort(receiver, comforter) -- This function seems 
 		receiver[comfortAuraUID] = receiver:DoPeriodicTask(1.0, function(receiver) -- Number is the interval for aura effect application
 			if receiver.components.sanity then -- To ensure sanity exists on the character. Crash prevention...
 				receiver.components.sanity:DoDelta(5.0) -- Number is the sanity gain per interval. The true prevents the pulsing that food and one-off stuff does receiver.components.sanity:DoDelta(3.0, true)
-				print("1 happy boi - test string here. May have added 5 sanity.")
+				--print("1 happy boi - test string here. May have added 5 sanity.")
 			end
 		end)
 	end
@@ -98,8 +98,8 @@ local function onApplyHornetComfort(receiver, comforter) -- This function seems 
 	end
 	
 	-- Ends the aura in 10 seconds, time will need adjusted
-	receiver[endComfortAuraUID] = receiver:DoTaskInTime(10.0, onEndHornetComfort, comforterGUID, comfortAuraUID)
-	--receiver[endComfortAuraUID] = receiver:DoTaskInTime(10.0, onEndHornetComfort, receiver, comforterGUID, comfortAuraUID)
+	--receiver[endComfortAuraUID] = receiver:DoTaskInTime(10.0, onEndHornetComfort, comforterGUID, comfortAuraUID)
+	receiver[endComfortAuraUID] = receiver:DoTaskInTime(10.0, onEndHornetComfort, receiver, comforterGUID, comfortAuraUID)
 end 
 
 local function applyHornetComfortRange(inst) -- I think this is done

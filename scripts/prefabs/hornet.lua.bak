@@ -98,8 +98,8 @@ local function onApplyHornetComfort(receiver, comforter) -- This function seems 
 	end
 	
 	-- Ends the aura in 10 seconds, time will need adjusted
-	receiver[endComfortAuraUID] = receiver:DoTaskInTime(10.0, onEndHornetComfort, comforterGUID, comfortAuraUID)
-	--receiver[endComfortAuraUID] = receiver:DoTaskInTime(10.0, onEndHornetComfort, receiver, comforterGUID, comfortAuraUID)
+	--receiver[endComfortAuraUID] = receiver:DoTaskInTime(10.0, onEndHornetComfort, comforterGUID, comfortAuraUID)
+	receiver[endComfortAuraUID] = receiver:DoTaskInTime(10.0, onEndHornetComfort, receiver, comforterGUID, comfortAuraUID)
 end 
 
 local function applyHornetComfortRange(inst) -- I think this is done
@@ -115,7 +115,7 @@ local function applyHornetComfortRange(inst) -- I think this is done
 	end
 end
 
-local function onAttackOther(inst, data) -- Possibly done, somewhat unclear. May well crash
+local function onAttackOther(inst, data) -- Appears to work and trigger fine.
 	-- One of the two triggering conditions
 	print("onAttackOther has been activated... Debug info") -- Debugging stuff
 	if not data.target or not data.target:IsValid() or data.target:HasTag("prey") or not data.target.components.combat then
