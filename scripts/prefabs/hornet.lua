@@ -106,7 +106,7 @@ local function applyHornetComfortRange(inst) -- I think this is done
 	-- In here I have to figure out how big the range of the aura should be and apply it like that.
 	local x, y, z = inst.Transform:GetWorldPosition()
 	--The 20 is the closeness in units. Not sure what units...
-	local closePlayers = TheSim:FindEntities(x, y, z, 20, {"player"}, {"playerghost", "INLIMBO"}, nil)
+	local closePlayers = TheSim:FindEntities(x, y, z, 20, {"player"}, {"playerghost", "INLIMBO"}, nil) --currently affects self as well. Could disable for all hornets...
 	-- Check wigfrid for a better implimentation method
 	
 	for i, v in ipairs(closePlayers) do
