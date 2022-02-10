@@ -56,7 +56,7 @@ end
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 --Battle sanity mechanics. All WIP
-local function onEndHornetComfort(receiver, comfortAuraUID, comforterGUID) -- Mostly done I think... Who knows.
+local function onEndHornetComfort(receiver, comforterGUID, comfortAuraUID) -- Mostly done I think... Who knows.
 	-- In here I put the cancelling code
 	print("onEndHornetComfort has been activated... Debug info") -- Debugging stuff
 	if not receiver or not receiver:IsValid() then
@@ -98,8 +98,8 @@ local function onApplyHornetComfort(receiver, comforter) -- This function seems 
 	end
 	
 	-- Ends the aura in 10 seconds, time will need adjusted
-	--receiver[endComfortAuraUID] = receiver:DoTaskInTime(10.0, onEndHornetComfort, comforterGUID, comfortAuraUID)
-	receiver[endComfortAuraUID] = receiver:DoTaskInTime(10.0, onEndHornetComfort, receiver, comforterGUID, comfortAuraUID)
+	receiver[endComfortAuraUID] = receiver:DoTaskInTime(10.0, onEndHornetComfort, comforterGUID, comfortAuraUID)
+	--receiver[endComfortAuraUID] = receiver:DoTaskInTime(10.0, onEndHornetComfort, receiver, comforterGUID, comfortAuraUID)
 end 
 
 local function applyHornetComfortRange(inst) -- I think this is done
