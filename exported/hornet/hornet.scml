@@ -31,12 +31,12 @@
         <file id="1" name="torso/torso-1.png" width="76" height="92" pivot_x="0.532888" pivot_y="0.157886"/>
         <file id="2" name="torso/torso-2.png" width="76" height="92" pivot_x="0.455586" pivot_y="0.150277"/>
         <file id="3" name="torso/torso-3.png" width="76" height="94" pivot_x="0.499993" pivot_y="0.128505"/>
-        <file id="4" name="torso/torso-4.png" width="84" height="100" pivot_x="0.42678" pivot_y="0.134755"/>
-        <file id="5" name="torso/torso-5.png" width="76" height="100" pivot_x="0.556901" pivot_y="0.133005"/>
-        <file id="6" name="torso/torso-6.png" width="72" height="96" pivot_x="0.499993" pivot_y="0.139589"/>
+        <file id="4" name="torso/torso-4.png" width="95" height="100" pivot_x="0.42678" pivot_y="0.134755"/>
+        <file id="5" name="torso/torso-5.png" width="83" height="100" pivot_x="0.556901" pivot_y="0.133005"/>
+        <file id="6" name="torso/torso-6.png" width="72" height="92" pivot_x="0.499993" pivot_y="0.139589"/>
         <file id="7" name="torso/torso-7.png" width="88" height="96" pivot_x="0.590903" pivot_y="0.136984"/>
         <file id="8" name="torso/torso-8.png" width="80" height="96" pivot_x="0.491244" pivot_y="0.137505"/>
-        <file id="9" name="torso/torso-9.png" width="92" height="72" pivot_x="0.43206" pivot_y="0.406257"/>
+        <file id="9" name="torso/torso-9.png" width="98" height="66" pivot_x="0.43206" pivot_y="0.406257"/>
     </folder>
     <folder id="4" name="foot">
         <file id="0" name="foot/foot-0.png" width="100" height="100" pivot_x="0.809708" pivot_y="0.89375"/>
@@ -64,7 +64,7 @@
         <file id="0" name="leg/leg-0.png" width="24" height="56" pivot_x="0.655188" pivot_y="0.858938"/>
         <file id="1" name="leg/leg-1.png" width="24" height="60" pivot_x="0.610396" pivot_y="0.824592"/>
         <file id="2" name="leg/leg-2.png" width="24" height="60" pivot_x="0.527062" pivot_y="0.848758"/>
-        <file id="3" name="leg/leg-3.png" width="24" height="64" pivot_x="0.717688" pivot_y="0.865242"/>
+        <file id="3" name="leg/leg-3.png" width="24" height="56" pivot_x="0.717688" pivot_y="0.865242"/>
         <file id="4" name="leg/leg-4.png" width="44" height="44" pivot_x="0.756807" pivot_y="0.864205"/>
         <file id="5" name="leg/leg-5.png" width="24" height="64" pivot_x="0.644771" pivot_y="0.861727"/>
         <file id="6" name="leg/leg-6.png" width="44" height="52" pivot_x="0.890318" pivot_y="0.719721"/>
@@ -78,10 +78,10 @@
     </folder>
     <folder id="8" name="arm_upper">
         <file id="0" name="arm_upper/arm_upper-0.png" width="44" height="64" pivot_x="0.522716" pivot_y="0.790633"/>
-        <file id="1" name="arm_upper/arm_upper-1.png" width="48" height="64" pivot_x="0.553635" pivot_y="0.799617"/>
+        <file id="1" name="arm_upper/arm_upper-1.png" width="42" height="64" pivot_x="0.553635" pivot_y="0.799617"/>
         <file id="2" name="arm_upper/arm_upper-2.png" width="41" height="60" pivot_x="0.507487" pivot_y="0.780842"/>
-        <file id="3" name="arm_upper/arm_upper-3.png" width="44" height="64" pivot_x="0.544875" pivot_y="0.78907"/>
-        <file id="4" name="arm_upper/arm_upper-4.png" width="44" height="48" pivot_x="0.492034" pivot_y="0.676573"/>
+        <file id="3" name="arm_upper/arm_upper-3.png" width="41" height="58" pivot_x="0.544875" pivot_y="0.78907"/>
+        <file id="4" name="arm_upper/arm_upper-4.png" width="44" height="40" pivot_x="0.492034" pivot_y="0.676573"/>
     </folder>
     <folder id="9" name="cheeks">
         <file id="0" name="cheeks/cheeks-0.png" width="64" height="60" pivot_x="0.508586" pivot_y="0.499592"/>
@@ -94,7 +94,7 @@
     </folder>
     <folder id="11" name="headbase_hat">
         <file id="0" name="headbase_hat/headbase_hat-0.png" width="215" height="282" pivot_x="0.547685" pivot_y="0.11469"/>
-        <file id="1" name="headbase_hat/headbase_hat-1.png" width="215" height="282" pivot_x="0.617686" pivot_y="0.103404"/>
+        <file id="1" name="headbase_hat/headbase_hat-1.png" width="193" height="282" pivot_x="0.617686" pivot_y="0.103404"/>
         <file id="2" name="headbase_hat/headbase_hat-2.png" width="215" height="282" pivot_x="0.49537" pivot_y="0.169611"/>
     </folder>
     <entity id="0" name="template">
