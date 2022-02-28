@@ -109,7 +109,7 @@ local function applyHornetComfortRange(inst) -- I think this is done
 	-- Check wigfrid for a better implimentation method
 	
 	for i, v in ipairs(closePlayers) do
-		--print(tostring(inst), " gave Comforting Aura to ", tostring(v))
+		print(tostring(inst), " gave Comforting Aura to ", tostring(v))
 		onApplyHornetComfort(v, inst)
 	end
 end
@@ -120,6 +120,7 @@ local function onAttackOther(inst, data) -- Appears to work and trigger fine.
 	if not data.target or not data.target:IsValid() or data.target:HasTag("prey") or not data.target.components.combat then
 		return
 	end -- Various abuse prevention methods
+	print("Checking Range")
 	applyHornetComfortRange(inst) --Calls the range check function, which will in turn call the applier
 end
 
