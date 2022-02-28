@@ -117,7 +117,7 @@ end
 local function onAttackOther(inst, data) -- Appears to work and trigger fine.
 	-- One of the two triggering conditions
 	print("onAttackOther has been activated... Debug info") -- Debugging stuff
-	if not data.target or not data.target:IsValid() or (data.target:HasTag("prey") and not data.target:HasTag("prey")) or data.target:HasTag("butterfly") or not data.target.components.combat then
+	if not data.target or not data.target:IsValid() or (data.target:HasTag("prey") and not data.target:HasTag("frog")) or data.target:HasTag("butterfly") or not data.target.components.combat then
 		return
 	end -- Various abuse prevention methods
 	print("Checking Range")
